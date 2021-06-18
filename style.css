@@ -33,16 +33,6 @@ Version: 1.0
 	9. footer css
 		9.1 footer top
 		9.2 footer bottom
-	10. home page 2	
-		10.1 left sidebar
-		10.2 category menu
-		10.3 category mega menu
-		10.4 best-seller
-		10.5 right product
-		10.6 latest news area
-		10.7 client area
-		10.8 facality area
-		10.9 main content full column
 	11. About page	
 		11.1 testimonials
 	12. my account page	
@@ -71,7 +61,8 @@ Version: 1.0
 -------------------------*/
 *, html {
     margin: 0;
-    padding: 0
+    padding: 0;
+	box-sizing: border-box;
 }
 body{
 	font-family: "arial",serif;
@@ -765,6 +756,7 @@ input.search-form[placeholder]:-ms-input-placeholder {
 }
 .drodown-mega-menu .mega-menu-list a.mega-menu-title{
 	font-size:16px;
+	font-weight: 600;
 	color:#000;
 	padding:0;
 	text-transform:uppercase;
@@ -784,8 +776,8 @@ input.search-form[placeholder]:-ms-input-placeholder {
 	line-height:35px;
 	padding:2px 0;
 	font-size:14px;
-	text-transform:capitalize;
-	font-size:13px;
+	font-weight: 700;
+	text-transform:none;
 }
 .mainmenu ul li .drodown-mega-menu .mega-menu-list ul li a:hover{
 	background:inherit;
