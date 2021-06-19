@@ -187,7 +187,7 @@ $(document).ready(function(){
 	$('#mainSlider').nivoSlider({
 		controlNav: true,
 		 directionNav: false,
-		 pauseTime: 5000,
+		 pauseTime: 4000,
 		nextText: '<div class="slider-bolut"></div>',
 		prevText: '<div class="slider-bolut"></div>'
 		
