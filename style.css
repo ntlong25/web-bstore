@@ -290,19 +290,7 @@ i.owl-next-icon{
 /*-----------------------
 2.5 page-title
 -------------------------*/	
-h2.page-title{
-border-bottom: 1px solid #d6d4d4;
-color: #555454;
-font-size:18px;
-line-height:22px;
-font-family: 'Bitter', serif;
-font-weight:600;
-margin-bottom: 30px;
-margin-top: 0px;
-overflow: hidden;
-padding: 0 0 17px;
-text-transform: uppercase;
-}
+h2.page-title{border-bottom: 1px solid #d6d4d4;color: #555454;font-size:18px;line-height:22px;font-family: 'Bitter', serif;font-weight:600;margin-bottom: 30px;margin-top: 40px;overflow: hidden;padding: 0 0 17px;text-transform: uppercase;}
 /*-----------------------
 2.6 scroll to top
 -------------------------*/	

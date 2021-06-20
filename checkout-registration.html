@@ -443,6 +443,10 @@
 								<h3 class="box-subheading">Thông tin tài khoản của bạn</h3>
 								<div class="personal-info-content">
 									<div class="form-group primary-form-group p-info-group">
+										<label for="firstname">Họ tên<sup>*</sup></label>
+										<input type="text" value="" name="name" id="name" class="form-control input-feild">
+									</div>
+									<div class="form-group primary-form-group p-info-group">
 										<label>Giới Tính</label>
 										<span class="radio-box">
 											<input id="radio1" type="radio" name="sex" value="1" checked="checked">
@@ -455,17 +459,12 @@
 										</span>
 									</div>
 									<div class="form-group primary-form-group p-info-group">
-										<label for="firstname">Họ tên<sup>*</sup></label>
-										<input type="text" value="" name="name" id="name" class="form-control input-feild">
-									</div>
-									<div class="form-group primary-form-group p-info-group">
 										<label for="email">Email<sup>*</sup></label>
 										<input type="email" value="" name="email" id="email" class="form-control input-feild">
 									</div>
 									<div class="form-group primary-form-group p-info-group">
 										<label for="phonenumber">Số điện thoại<sup>*</sup></label>
-										<input type="phonenumber" value="" name="phonenumber" id="phonenumber" class="form-control input-feild">
-										<span class="min-pass">(Tối thiểu 10 số)</span>
+										<input type="phonenumber" value="" name="phonenumber" id="phonenumber" class="form-control input-feild" placeholder="Tối thiểu 10 số">
 									</div>
 									<div class="form-group primary-form-group p-info-group">
 										<label>Ngày Sinh</label>
@@ -660,15 +659,12 @@
 									</div>
 									<div class="submit-button p-info-submit-button">
 										<a href="checkout-registration.html" id="SubmitCreate" class="btn main-btn">
-											<span>
-												Cập nhật
-												<i class="fa fa-chevron-right"></i>
-											</span>											
+											<button type="submit" class="btn btn-primary">Cập nhật</button>									
 										</a>
 										<span class="required-field"><sup>*</sup>Phần bắt buộc</span>
 									</div>
 								</div>
-							</form>							
+							</form>					
 						</div>
 						<!-- PERSONAL-INFOMATION END -->
 					</div>
