@@ -1,0 +1,15 @@
+.address{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 2;
+    border-radius: 2px;
+}
+    .address .p-info-group{
+    }
+    .address .p-info-group textarea{
+        max-width: 382px;
+        height: 100px;
+        
+    }
+
+    

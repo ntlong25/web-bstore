@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tài khoản</title>
+        <title>Quản lý đơn hàng</title>
         <meta name="description" content="">
 		
 		<!-- Favicon
@@ -76,7 +76,11 @@
 		<!-- IE CSS 
 		============================================ -->
         <link rel="stylesheet" href="css/ie.css">
-		
+
+        <!-- MANAGE-ORDER CSS 
+		============================================ -->
+        <link rel="stylesheet" href="css/manage-order.css">
+
 		<!-- MODERNIZR JS 
 		============================================ -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -89,7 +93,7 @@
         <!-- Add your site or application content here -->
 		
 	<!-- HEADER-TOP START -->
-	<div class="header-top">
+    <div class="header-top">
 		<div class="container">
 			<div class="row">
 				<!-- HEADER-LEFT-MENU START -->
@@ -118,7 +122,7 @@
 		</div>
 	</div>
 	<!-- HEADER-TOP END -->
-	<!-- HEADER-MIDDLE START -->
+    <!-- HEADER-MIDDLE START -->
 	<section class="header-middle">
 		<div class="container">
 			<div class="row">
@@ -153,7 +157,7 @@
 		</div>
 	</section>
 	<!-- HEADER-MIDDLE END -->
-	<!-- MAIN-MENU-AREA START -->
+    <!-- MAIN-MENU-AREA START -->
 	<header class="main-menu-area">
 		<div class="container">
 			<div class="row">
@@ -173,7 +177,8 @@
 										<a href="#"><img src="img/shopping-image.jpg" alt="shopping image" /></a>
 									</div>
 									<div class="shipping-item-text">
-										<span>2 <span class="pro-quan-x">x</span> <a href="#" class="pro-cat">Watch</a></span>
+										<span>2 <span class="pro-quan-x">x</span> <a href="#"
+												class="pro-cat">Watch</a></span>
 										<span class="pro-quality"><a href="#">S,Black</a></span>
 										<p>$22.95</p>
 									</div>
@@ -184,7 +189,8 @@
 										<a href="#"><img src="img/shopping-image2.jpg" alt="shopping image" /></a>
 									</div>
 									<div class="shipping-item-text">
-										<span>2 <span class="pro-quan-x">x</span> <a href="#" class="pro-cat">Women Bag</a></span>
+										<span>2 <span class="pro-quan-x">x</span> <a href="#" class="pro-cat">Women
+												Bag</a></span>
 										<span class="pro-quality"><a href="#">S,Gary</a></span>
 										<p>$19.95</p>
 									</div>
@@ -197,15 +203,15 @@
 									<div class="total-shipping-prices">
 										<span class="shipping-total">$24.95</span>
 										<span>Total</span>
-									</div>										
+									</div>
 								</div>
 								<div class="shipping-checkout-btn">
-									<a href="checkout.html">Thanh Toán   <i class="fa fa-chevron-right"></i></a>
+									<a href="checkout.html">Thanh Toán <i class="fa fa-chevron-right"></i></a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>	
+				</div>
 				<!-- SHOPPING-CART END -->
 				<!-- MAINMENU START -->
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 no-padding-right menuarea">
@@ -266,7 +272,7 @@
 								</li>
 								<li>
 									<a href="shop-gird.html">Mac</a>
-									<!-- DRODOWN-MEGA-MENU START -->	
+									<!-- DRODOWN-MEGA-MENU START -->
 									<div class="drodown-mega-menu">
 										<div class="left-mega col-xs-6">
 											<div class="mega-menu-list">
@@ -292,10 +298,10 @@
 												<a class="mega-menu-title" href="shop-gird.html">Mac Mini</a>
 											</div>
 										</div>
-									</div>	
-									<!-- DRODOWN-MEGA-MENU END -->										
+									</div>
+									<!-- DRODOWN-MEGA-MENU END -->
 								</li>
-								
+
 								<li>
 									<a href="shop-gird.html">Phụ kiện</a>
 									<!-- DRODOWN-MEGA-MENU START -->
@@ -310,13 +316,16 @@
 										</div>
 										<div class="right-mega col-xs-6">
 											<div class="mega-menu-list">
-												<a class="mega-menu-title" href="shop-gird.html">Phụ kiện iPhone chính hãng</a>
+												<a class="mega-menu-title" href="shop-gird.html">Phụ kiện iPhone chính
+													hãng</a>
 											</div>
 											<div class="mega-menu-list">
-												<a class="mega-menu-title" href="shop-gird.html">Phụ kiện MAC chính hãng</a>
+												<a class="mega-menu-title" href="shop-gird.html">Phụ kiện MAC chính
+													hãng</a>
 											</div>
 											<div class="mega-menu-list">
-												<a class="mega-menu-title" href="shop-gird.html">Phụ kiện iPad chính hãng</a>
+												<a class="mega-menu-title" href="shop-gird.html">Phụ kiện iPad chính
+													hãng</a>
 											</div>
 										</div>
 									</div>
@@ -342,63 +351,141 @@
 						</nav>
 					</div>
 				</div>
-		<!-- MAIN-CONTENT-SECTION START -->
-		<section class="main-content-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<!-- BSTORE-BREADCRUMB START -->
-						<div class="bstore-breadcrumb">
-							<a href="index.html">Trang Chủ</a>
-							<span><i class="fa fa-caret-right	"></i></span>
-							<span>Tài Khoản</span>
-						</div>
-						<!-- BSTORE-BREADCRUMB END -->
+				<!-- MAINMENU END -->
+			</div>
+			<div class="row">
+				<!-- MOBILE MENU START -->
+				<div class="col-sm-12 mobile-menu-area">
+					<div class="mobile-menu hidden-md hidden-lg" id="mob-menu">
+						<span class="mobile-menu-title">MENU</span>
+						<nav>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="shop-gird.html">iPhone</a>
+									<ul>
+										<li><a href="shop-gird.html">iPhone 12</a></li>
+										<li><a href="shop-gird.html">iPhone 11</a></li>
+										<li><a href="shop-gird.html">iPhone X</a></li>
+									</ul>
+								</li>
+								<li><a href="shop-gird.html">iPad</a>
+									<ul>
+										<li><a href="shop-gird.html">iPad Pro</a></li>
+										<li><a href="shop-gird.html">iPad Air</a></li>
+										<li><a href="shop-gird.html">iPad Gen</a></li>
+										<li><a href="shop-gird.html">iPad Mini</a></li>
+									</ul>
+								</li>
+								<li><a href="shop-gird.html">MAC</a>
+									<ul>
+										<li><a href="shop-gird.html">Macbook Pro</a>
+											<ul>
+												<li><a href="shop-gird.html">Macbook Pro M1 2020</a></li>
+												<li><a href="shop-gird.html">Macbook Pro 2020</a></li>
+											</ul>
+										</li>
+										<li><a href="shop-gird.html">Macbook Air</a>
+											<ul>
+												<li><a href="shop-gird.html">Macbook Air M1 2020</a></li>
+												<li><a href="shop-gird.html">Macbook Air 2020</a></li>
+											</ul>
+										</li>
+										<li><a href="shop-gird.html">iMac</a></li>
+										<li><a href="shop-gird.html">Mac Mini</a></li>
+									</ul>
+								</li>
+								<li><a href="shop-gird.html">Phụ Kiện</a>
+									<ul>
+										<li><a href="shop-gird.html">AirPod</a></li>
+										<li><a href="shop-gird.html">Apple Watch</a></li>
+										<li><a href="shop-gird.html">Phụ kiện iPhone chính hãng</a></li>
+										<li><a href="shop-gird.html">Phụ kiện MAC chính hãng</a></li>
+										<li><a href="shop-gird.html">Phụ kiện iPad chính hãng</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Dịch Vụ</a>
+									<ul>
+										<li><a href="shop-gird.html">Bảo Hành</a></li>
+										<li><a href="shop-gird.html">Thu Cũ Đổi Mới</a></li>
+									</ul>
+								</li>
+								<li><a href="about-us.html">About us</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<h2 class="page-title">Tài Khoản</h2>
-					</div>	
-					<div class="account-info-text">
-						Chào mừng đến tài khoản của bạn. Tại đây, bạn có thể quản lý thông tin tài khoản và các đơn hàng.
+				<!-- MOBILE MENU END -->
+			</div>
+		</div>
+	</header>
+    <!-- MAIN-CONTENT-SECTION START -->
+	<section class="main-content-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<!-- BSTORE-BREADCRUMB START -->
+					<div class="bstore-breadcrumb">
+						<a href="index.html">Trang Chủ</a>
+						<span><i class="fa fa-caret-right	"></i></span>
+						<span>Tài Khoản</span>
+						<span><i class="fa fa-caret-right	"></i></span>
+						<span>Quản lý đơn hàng</span>
 					</div>
-					<!-- ACCOUNT-INFO-TEXT START -->
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-						<div class="account-info">
-							<div class="single-account-info">
-								<ul>
-									<li><a href="add-address.html"><i class="fa fa-building"></i><span>Thêm địa chỉ</span>	</a></li>
-									<li><a href="manage-order.html"><i class="fa fa-list-ol"></i><span>Quản lý đơn hàng</span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-						<div class="account-info">
-							<div class="single-account-info">
-								<ul>
-									<li><a href="checkout-address.html"><i class="fa fa-building"></i><span>Địa chỉ</span>	</a></li>
-									<li><a href="checkout-registration.html"><i class="fa fa-user"></i><span>Thông tin tài khoản</span>	</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- ACCOUNT-INFO-TEXT END -->
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<!-- BACK TO HOME START -->
-						<div class="home-link-menu">
-							<ul>
-								<li><a href="index.html"><i class="fa fa-chevron-left"></i> Trở về</a></li>
-							</ul>
-						</div>
-						<!-- BACK TO HOME END -->
+					<!-- BSTORE-BREADCRUMB END -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h2 class="page-title">Quản lý đơn hàng</h2>
+				</div>
+				<!-- ADDRESS -->
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="order">
+						<table>
+                            <thead>
+                                <tr>
+                                    <th>Mã đơn hàng</th>
+                                    <th>Ngày mua</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Trạng thái đơn hàng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <th>20/06/2021 </th>
+                                    <th>IPhone</th>
+                                    <th>100.000</th>
+                                    <th>Đã giao</td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th>19/06/2021 </th>
+                                    <th>IMac</th>
+                                    <th>100.000</th>
+                                    <th>Chưa giao</td>
+                                </tr>
+                            </tbody>
+                        </table>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- MAIN-CONTENT-SECTION END -->
-		<!-- COMPANY-FACALITY START -->
+			<!-- ADDRESS END -->
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<!-- BACK TO MY-ACCCOUNT START -->
+				<div class="home-link-menu">
+					<ul>
+						<li><a href="my-account.html"><i class="fa fa-chevron-left"></i> Trở về</a></li>
+					</ul>
+				</div>
+				<!-- BACK TO MY-ACCCOUNT END -->
+			</div>
+		</div>
+	</div>
+	</section>
+	<!-- MAIN-CONTENT-SECTION END -->
+    <!-- COMPANY-FACALITY START -->
 	<section class="company-facality">
 		<div class="container">
 			<div class="row">
@@ -429,8 +516,8 @@
 						</div>
 					</div>
 					<!-- SINGLE-FACALITY END -->
-					
-					<!-- SINGLE-FACALITY START -->						
+
+					<!-- SINGLE-FACALITY START -->
 					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 						<div class="single-facality" style="border-radius: 50%;">
 							<div class="facality-icon">
@@ -441,8 +528,8 @@
 								<span>Nếu có lỗi từ nhà sản xuất</span>
 							</div>
 						</div>
-					</div>		
-					<!-- SINGLE-FACALITY END -->					
+					</div>
+					<!-- SINGLE-FACALITY END -->
 				</div>
 			</div>
 		</div>
@@ -459,11 +546,12 @@
 							<!-- NEWSLETTER-AREA START -->
 							<div class="newsletter-area">
 								<h2>Đăng ký nhận tin</h2>
-								<p>Đăng ký danh sách gửi thư của chúng tôi để nhận thông tin cập nhật về hàng mới, 
+								<p>Đăng ký danh sách gửi thư của chúng tôi để nhận thông tin cập nhật về hàng mới,
 									ưu đãi đặc biệt và thông tin giảm giá khác.</p>
 								<form action="#">
 									<div class="form-group newsletter-form-group">
-										<input type="text" class="form-control newsletter-form" placeholder="Địa chỉ email của bạn">
+										<input type="text" class="form-control newsletter-form"
+											placeholder="Địa chỉ email của bạn">
 										<input type="submit" class="newsletter-btn" name="submit" value="Đăng ký" />
 									</div>
 								</form>
@@ -503,7 +591,8 @@
 													<i class="fa fa-map-marker"></i>
 												</div>
 												<div class="info-text">
-													<p>475A Điện Biên Phủ, phường 25, quận Bình Thạnh, TP Hồ Chí Minh </p>
+													<p>475A Điện Biên Phủ, phường 25, quận Bình Thạnh, TP Hồ Chí Minh
+													</p>
 												</div>
 											</li>
 											<li>
@@ -519,7 +608,9 @@
 													<i class="fa fa-envelope-o"></i>
 												</div>
 												<div class="info-text">
-													<p>Mail: <a href="mailto:longnt25@ptd.edu.vn">longnt25@ptd.edu.vn</a></p>
+													<p>Mail: <a
+															href="mailto:longnt25@ptd.edu.vn">longnt25@ptd.edu.vn</a>
+													</p>
 												</div>
 											</li>
 										</ul>
@@ -546,10 +637,14 @@
 										<div class="single-f-widget">
 											<h2>Danh mục</h2>
 											<ul>
-												<li><a href="shop-gird.html"><i class="fa fa-angle-double-right"></i>iPhone </a></li>
-												<li><a href="shop-gird.html"><i class="fa fa-angle-double-right"></i>iPad</a></li>
-												<li><a href="shop-gird.html"><i class="fa fa-angle-double-right"></i>Macbook</a></li>
-												<li><a href="shop-gird.html"><i class="fa fa-angle-double-right"></i>Phụ Kiện</a></li>
+												<li><a href="shop-gird.html"><i
+															class="fa fa-angle-double-right"></i>iPhone </a></li>
+												<li><a href="shop-gird.html"><i
+															class="fa fa-angle-double-right"></i>iPad</a></li>
+												<li><a href="shop-gird.html"><i
+															class="fa fa-angle-double-right"></i>Macbook</a></li>
+												<li><a href="shop-gird.html"><i class="fa fa-angle-double-right"></i>Phụ
+														Kiện</a></li>
 											</ul>
 										</div>
 									</div>
@@ -561,11 +656,15 @@
 										<div class="single-f-widget">
 											<h2>Tài Khoản</h2>
 											<ul>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i>Đơn đặt hàng</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i>Phương thức thanh toán</a></li>
+												<li><a href="#"><i class="fa fa-angle-double-right"></i>Đơn đặt hàng</a>
+												</li>
+												<li><a href="#"><i class="fa fa-angle-double-right"></i>Phương thức
+														thanh toán</a></li>
 												<li><a href="#"><i class="fa fa-angle-double-right"></i>Địa chỉ</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i>Thông tin cá nhân</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i>Đăng xuất </a></li>
+												<li><a href="#"><i class="fa fa-angle-double-right"></i>Thông tin cá
+														nhân</a></li>
+												<li><a href="#"><i class="fa fa-angle-double-right"></i>Đăng xuất </a>
+												</li>
 											</ul>
 										</div>
 									</div>
@@ -579,73 +678,75 @@
 		</div>
 	</section>
 	<!-- FOOTER-TOP-AREA END -->
-		<!-- COPYRIGHT-AREA START -->
-		<footer class="copyright-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="copy-right">
-							<address>Copyright © 2015 <a href="http://bootexperts.com/">BootExperts</a> All Rights Reserved</address>
-						</div>
-						<div class="scroll-to-top">
-							<a href="#" class="bstore-scrollertop"><i class="fa fa-angle-double-up"></i></a>
-						</div>
+	<!-- COPYRIGHT-AREA START -->
+	<footer class="copyright-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="copy-right">
+						<address>Copyright © 2015 <a href="http://bootexperts.com/">BootExperts</a> All Rights Reserved
+						</address>
+					</div>
+					<div class="scroll-to-top">
+						<a href="#" class="bstore-scrollertop"><i class="fa fa-angle-double-up"></i></a>
 					</div>
 				</div>
-			</footer> 
-			<!-- COPYRIGHT-AREA END -->
-			<!-- JS 
-			===============================================-->
-			<!-- jquery js -->
-			<script src="js/vendor/jquery-1.11.3.min.js"></script>
-		
-			<!-- fancybox js -->
-			<script src="js/jquery.fancybox.js"></script>
-		
-			<!-- bxslider js -->
-			<script src="js/jquery.bxslider.min.js"></script>
-		
-			<!-- meanmenu js -->
-			<script src="js/jquery.meanmenu.js"></script>
-		
-			<!-- owl carousel js -->
-			<script src="js/owl.carousel.min.js"></script>
-		
-			<!-- nivo slider js -->
-			<script src="js/jquery.nivo.slider.js"></script>
-		
-			<!-- jqueryui js -->
-			<script src="js/jqueryui.js"></script>
-		
-			<!-- bootstrap js -->
-			<script src="js/bootstrap.min.js"></script>
-		
-			<!-- wow js -->
-			<script src="js/wow.js"></script>		
-			<script>
-				new WOW().init();
-			</script>
-		
-			<!-- Google Map js -->
-			<script src="https://maps.googleapis.com/maps/api/js"></script>	
-			<script>
-				function initialize() {
-					var mapOptions = {
-					zoom: 8,
-					scrollwheel: false,
-					center: new google.maps.LatLng(35.149868, -90.046678)
-					};
-					var map = new google.maps.Map(document.getElementById('googleMap'),
-						mapOptions);
-					var marker = new google.maps.Marker({
-					position: map.getCenter(),
-					map: map
-					});
-		
-				}
-				google.maps.event.addDomListener(window, 'load', initialize);				
-			</script>
-			<!-- main js -->
-			<script src="js/main.js"></script>
-		</body>
-		</html>
+			</div>
+		</div>
+	</footer>
+	<!-- COPYRIGHT-AREA END -->
+	<!-- JS 
+	===============================================-->
+	<!-- jquery js -->
+	<script src="js/vendor/jquery-1.11.3.min.js"></script>
+
+	<!-- fancybox js -->
+	<script src="js/jquery.fancybox.js"></script>
+
+	<!-- bxslider js -->
+	<script src="js/jquery.bxslider.min.js"></script>
+
+	<!-- meanmenu js -->
+	<script src="js/jquery.meanmenu.js"></script>
+
+	<!-- owl carousel js -->
+	<script src="js/owl.carousel.min.js"></script>
+
+	<!-- nivo slider js -->
+	<script src="js/jquery.nivo.slider.js"></script>
+
+	<!-- jqueryui js -->
+	<script src="js/jqueryui.js"></script>
+
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- wow js -->
+	<script src="js/wow.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+	<!-- Google Map js -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+			var mapOptions = {
+				zoom: 8,
+				scrollwheel: false,
+				center: new google.maps.LatLng(35.149868, -90.046678)
+			};
+			var map = new google.maps.Map(document.getElementById('googleMap'),
+				mapOptions);
+			var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				map: map
+			});
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<!-- main js -->
+	<script src="js/main.js"></script>
+    </body>
+</html>
