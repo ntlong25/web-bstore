@@ -133,22 +133,7 @@ $(document).ready(function(){
 		$('.category-menu-list').slideToggle(300);
 	});	
 		
-/*---------------------------------------
-	home 2 new product, home 2 sale product carousel
------------------------------------------ */	
-	$('.home2-new-pro-carousel, .home2-sale-carousel').owlCarousel({
-		items : 4,
-		itemsDesktop : [1199,3],
-		itemsDesktopSmall : [991,2],
-		itemsTablet: [767,2],
-		itemsMobile : [480,1],
-		autoPlay :  false,
-		stopOnHover: false,		
-		navigation: true,
-		pagination: false,
-		navigationText:['<i class="fa fa-angle-left owl-prev-icon"></i>','<i class="fa fa-angle-right owl-next-icon"></i>']	
-	});
-		
+
 /*---------------------------------------
 	sidebar best seller carousel
 ----------------------------------------- */
