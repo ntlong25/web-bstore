@@ -18,7 +18,7 @@ $(document).ready(function(){
     $('.gategory-product .gategory-product-list').slice(0, pShow).show();
     $('.pagination-bar .pagi-num:first').addClass('active');
     $('.prev').addClass('disabled');$('.next').addClass('active');
-    $('.pagination-bar .pagi-num').bind('click', function(){
+    $('.pagination-bar .pagi-num').on('click', function(){
         $('.pagination-bar .pagi-num').removeClass('active');
         $(this).addClass('active');
         var currPage = $(this).attr('rel');
@@ -48,7 +48,7 @@ $(document).ready(function(){
     });
 
     // Prev page click
-    $('.pagination-bar .prev').bind('click', function(){
+    $('.pagination-bar .prev').on('click', function(){
         // Lấy phần tử đầu tiên có class = "pagi-num" 
         const first = $('.pagination-bar .pagi-num').siblings().first();
         // Nếu phần tử đó không có class='active' thì xử lý:
@@ -90,12 +90,11 @@ $(document).ready(function(){
     });
 
     // Next page click
-    $('.pagination-bar .next').bind('click', function(){
-        const last = $('.pagination-bar .pagi-num').last();
+    $('.pagination-bar .next').on('click', function(){
+        const last = $(this).siblings();
+        console.log(last);
         if(!last.hasClass('active')){
-            const active = $('.pagination-bar .pagi-num').find('.active');
-            console.log(active);
-            console.log(active.attr('rel'));
+            const active = $('.pagination-bar .pagi-num').siblings('pagi-num');
             $('.pagination-bar .pagi-num').removeClass('active');
             const nextItem = active.next();
             nextItem.addClass('active');
@@ -126,7 +125,6 @@ $(document).ready(function(){
             }
         }
     });
-
 
     // /////////////////////////////////////////////////////////////////////////////
     
