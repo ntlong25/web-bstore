@@ -91,8 +91,7 @@ $(document).ready(function(){
 
     // Next page click
     $('.pagination-bar .next').on('click', function(){
-        const last = $(this).siblings();
-        console.log(last);
+        const last = $(this).siblings().last();
         if(!last.hasClass('active')){
             const active = $('.pagination-bar .pagi-num').siblings('pagi-num');
             $('.pagination-bar .pagi-num').removeClass('active');

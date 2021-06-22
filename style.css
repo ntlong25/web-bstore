@@ -654,6 +654,7 @@ input.search-form[placeholder]:-ms-input-placeholder {
 	height:55px;
 	position:relative;
 }
+
 .mainmenu{
 	background:#3A3D42;
 	padding-left:5px;
@@ -4253,8 +4254,8 @@ span.large-btn:hover i{
 	background:#E04B34;
 	color:#fff;
 }
-.single-product-social-share ul li a.pin-link i{color:#CE1F21;}
-.single-product-social-share ul li a.pin-link:hover, .single-product-social-share ul li a.pin-link:hover i{
+.single-product-social-share ul li a.ins-link i{color:#CE1F21;}
+.single-product-social-share ul li a.ins-link:hover, .single-product-social-share ul li a.ins-link:hover i{
 	background:#CE1F21;
 	color:#fff;
 }

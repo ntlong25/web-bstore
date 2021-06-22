@@ -26,23 +26,7 @@ $(document).ready(function(){
 	});
 	$( "#slidevalue" ).val( "$" + $( "#price-range" ).slider( "values", 0 ) +
 		" - $" + $( "#price-range" ).slider( "values", 1 ) );	
-		
-/*---------------------------------------
-	scroll to top
------------------------------------------ */	
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 250) {
-			$('.bstore-scrollertop').fadeIn();
-		} else {
-			$('.bstore-scrollertop').fadeOut();
-		}
-	});
-	//Click event to scroll to top
-	$('.bstore-scrollertop').on( "click", function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});	
-	
+
 /*---------------------------------------
 	mobile menu
 ----------------------------------------- */	
@@ -198,22 +182,54 @@ $(document).ready(function(){
 /*-----------------------------------------
 	cart plus minus button
 --------------------------------------------*/	  
-	 $(".cart-plus-minus-button").append('<div class="dec qtybutton">-</div><div class="inc qtybutton">+</div>');
-	  $(".qtybutton").on("click", function() {
-		var $button = $(this);
-		var oldValue = $button.parent().find("input").val();
-		if ($button.text() == "+") {
-		  var newVal = parseFloat(oldValue) + 1;
+
+	$(".cart-plus-minus-button").append('<div class="dec qtybutton">-</div><div class="inc qtybutton">+</div>');
+	$(".qtybutton").on("click", function() {
+	var $button = $(this);
+	var oldValue = $button.parent().find("input").val();
+	if ($button.text() == "+") {
+		var newVal = parseFloat(oldValue) + 1;
+	} else {
+		// Don't allow decrementing below zero
+		if (oldValue > 0) {
+		var newVal = parseFloat(oldValue) - 1;
 		} else {
-		   // Don't allow decrementing below zero
-		  if (oldValue > 0) {
-			var newVal = parseFloat(oldValue) - 1;
-			} else {
-			newVal = 0;
-		  }
-		  }
-		$button.parent().find("input").val(newVal);
-	  });
+		newVal = 0;
+		}
+		}
+	$button.parent().find("input").val(newVal);
+	});
+
+		
+/*---------------------------------------
+	scroll to top
+----------------------------------------- */	
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 250) {
+			$('.bstore-scrollertop').fadeIn();
+		} else {
+			$('.bstore-scrollertop').fadeOut();
+		}
+	});
+	//Click event to scroll to top
+	$('.bstore-scrollertop').on( "click", function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});	
+
+
+
+
+	// Scroll menu bar
+	// window.onscroll = function() {
+	// 	if (document.body.scrollTop > 240 || document.documentElement.scrollTop > 240) {
+	// 		console.log(document.documentElement.scrollTop);
+	// 		$(".main-menu-area").css('top', '300px');
+	// 	} else {
+	// 		$(".main-menu-area").css('top', '0px');
+	// 	}
+	// };
+	
 		
 }); 
 
