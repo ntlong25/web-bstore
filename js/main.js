@@ -191,14 +191,39 @@ $(document).ready(function(){
 		var newVal = parseFloat(oldValue) + 1;
 	} else {
 		// Don't allow decrementing below zero
-		if (oldValue > 0) {
+		if (oldValue > 1) {
 		var newVal = parseFloat(oldValue) - 1;
 		} else {
-		newVal = 0;
+		newVal = 1;
 		}
 		}
 	$button.parent().find("input").val(newVal);
 	});
+
+
+/*---------------------------------------
+	cart
+----------------------------------------- */
+
+	$(".remove").click(function () {
+		$(this).parents(".shipping-item").remove();
+		changed();
+	});
+
+	function changed() {
+		var subtotal = 0;
+		$(".p").each(function () {
+			subtotal = subtotal + parseFloat($(this).children(".pricesubtotal").text().replace("$", ""));
+		});
+		$(".totalpricesubtotal").text("$" + (Math.round(subtotal * 100) / 100).toFixed(2));
+		var a = (subtotal / 100 * 105) + parseFloat($(".shipping").text())
+		var total = (Math.round(a * 100) / 100).toFixed(2);
+		$(".realtotal").text(total);
+		$(".taxval").text("($" + (Math.round(subtotal * 5) / 100).toFixed(2) + ") ");
+	}
+
+
+
 
 		
 /*---------------------------------------
@@ -220,15 +245,6 @@ $(document).ready(function(){
 
 
 
-	// Scroll menu bar
-	// window.onscroll = function() {
-	// 	if (document.body.scrollTop > 240 || document.documentElement.scrollTop > 240) {
-	// 		console.log(document.documentElement.scrollTop);
-	// 		$(".main-menu-area").css('top', '300px');
-	// 	} else {
-	// 		$(".main-menu-area").css('top', '0px');
-	// 	}
-	// };
 	
 		
 }); 
