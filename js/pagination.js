@@ -4,12 +4,12 @@ $(document).ready(function(){
     var numPages = pTotal/pShow;
     var lastPage = Math.ceil(numPages)-1;
     const ul = $('.pagination-bar');
-    ul.append('<li><a href="#" class="prev" ><i class="fa fa-chevron-left"></i></a></li>');
+    ul.append('<li><a href="#" class="prev"><i class="fa fa-chevron-left"></i></a></li>');
     for(i = 0;i < numPages;i++) {
         var pageNum = i + 1;
         ul.append('<li><a class="pagi-num" href="#" rel="'+i+'">'+pageNum+'</a></li> ');
     }
-    ul.append('<li><a href="#" class="next"><i class="fa fa-chevron-right"></i></a></li>');
+    ul.append('<li><a href="# class="next"><i class="fa fa-chevron-right"></i></a></li>');
 
 
     // console.log($('.pagination-bar a.pagi-num').siblings());
