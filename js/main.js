@@ -3,14 +3,21 @@
 
 $(document).ready(function(){
 /*---------------------------------------
-	curency and language js
+	update cart 
 ----------------------------------------- */	
-	$(".current-currency").on( "click", function(){
-		$(".currency-toogle").slideToggle(400);
+ 
+	var subtotal = 0;
+	$(".shipping-cart-overly").each(function () {
+		var price_P = parseFloat($(this).children(".shipping-item").children(".shipping-item-text").children(".giaSP").text().replace("$", ""));
+		var quantity_P = parseFloat($(this).children(".shipping-item").children(".shipping-item-text").children('span').children(".so-luong").text());
+		subtotal = subtotal + (price_P * quantity_P);
+		console.log(price_P);
+		console.log(1);
+		console.log(quantity_P);
+
 	});
-	$(".current-lang").on( "click", function(){
-		$(".language-toogle").slideToggle(400);
-	});	
+	$(".shipping-total").text("$" + (Math.round(subtotal * 100) / 100).toFixed(2));
+
 		
 /*---------------------------------------
 	price range ui slider js
@@ -209,17 +216,19 @@ $(document).ready(function(){
 		$(this).parents(".shipping-item").remove();
 		changed();
 	});
+	// .so-luong, .giaSP
 
 	function changed() {
 		var subtotal = 0;
-		$(".p").each(function () {
-			subtotal = subtotal + parseFloat($(this).children(".pricesubtotal").text().replace("$", ""));
+		$(".shipping-cart-overly").each(function () {
+			subtotal = subtotal + (parseFloat($(this).children(".shipping-item")
+										.children(".shipping-item-text")
+										.children(".giaSP").text().replace("$", "")) * parseFloat($(this).children(".shipping-item")
+										.children(".shipping-item-text").children('span')
+										.children(".so-luong").text()));
+			
 		});
-		$(".totalpricesubtotal").text("$" + (Math.round(subtotal * 100) / 100).toFixed(2));
-		var a = (subtotal / 100 * 105) + parseFloat($(".shipping").text())
-		var total = (Math.round(a * 100) / 100).toFixed(2);
-		$(".realtotal").text(total);
-		$(".taxval").text("($" + (Math.round(subtotal * 5) / 100).toFixed(2) + ") ");
+		$(".shipping-total").text("$" + (Math.round(subtotal * 100) / 100).toFixed(2));
 	}
 
 
