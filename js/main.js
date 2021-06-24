@@ -8,13 +8,11 @@ $(document).ready(function(){
  
 	var subtotal = 0;
 	$(".shipping-cart-overly").each(function () {
-		var price_P = parseFloat($(this).children(".shipping-item").children(".shipping-item-text").children(".giaSP").text().replace("$", ""));
-		var quantity_P = parseFloat($(this).children(".shipping-item").children(".shipping-item-text").children('span').children(".so-luong").text());
-		subtotal = subtotal + (price_P * quantity_P);
-		console.log(price_P);
-		console.log(1);
-		console.log(quantity_P);
-
+		$(this).find(".shipping-item").each(function () {
+			var price_P = parseFloat($(this).find(".giaSP").text().replace("$", ""));
+			var quantity_P = parseFloat($(this).find(".so-luong").text());
+			subtotal = subtotal + (price_P * quantity_P);
+		});
 	});
 	$(".shipping-total").text("$" + (Math.round(subtotal * 100) / 100).toFixed(2));
 
