@@ -18,6 +18,43 @@ $(document).ready(function(){
 
 		
 /*---------------------------------------
+	update number product in cart page
+----------------------------------------- */
+
+	var num_product = 0;
+
+	$(".cart-row-product").each(function(){
+		$(this).find("tr").each(function(){
+			num_product +=1;
+		});
+	});
+	$(".num-products").text(num_product);
+
+
+
+/*---------------------------------------
+	update price product in cart page
+----------------------------------------- */
+
+	var total_price = 0;
+	$(".cart-row-product").each(function(){
+		$(this).find("tr").each(function(){
+			var priceProduct = parseFloat($(this).find(".cart-unit").children(".price").children(".price").text().replace("$", ""));
+			var soluong = parseFloat($(this).find(".cart_quantity")
+										.children(".cart-plus-minus-button").children(".cart-plus-minus").val());
+			$(this).find(".cart-total").children(".price").text("$" + priceProduct);
+			total_price = total_price + (priceProduct*soluong);
+		});
+	});
+	var price_shipping = parseFloat($("#total_shipping").text().replace("$", ""));
+	var voucher = parseFloat($("#voucher").text().replace("$", ""));
+	$(".cart-total-price #total_product").text("$" + (Math.round(total_price * 100) / 100).toFixed(2));
+	var total = total_price + price_shipping - voucher;
+	$("#total-price").text("$" + (Math.round(total * 100) / 100).toFixed(2));
+
+
+
+/*---------------------------------------
 	price range ui slider js
 ----------------------------------------- */		
 	$( "#price-range" ).slider({
@@ -190,10 +227,10 @@ $(document).ready(function(){
 
 	$(".cart-plus-minus-button").append('<div class="dec qtybutton">-</div><div class="inc qtybutton">+</div>');
 	$(".qtybutton").on("click", function() {
-	var $button = $(this);
-	var oldValue = $button.parent().find("input").val();
-	if ($button.text() == "+") {
+	var oldValue = $(this).parent().find("input").val();
+	if ($(this).text() == "+") {
 		var newVal = parseFloat(oldValue) + 1;
+		changePrice();
 	} else {
 		// Don't allow decrementing below zero
 		if (oldValue > 1) {
@@ -202,8 +239,29 @@ $(document).ready(function(){
 		newVal = 1;
 		}
 		}
-	$button.parent().find("input").val(newVal);
+		$(this).parent().find("input").val(newVal);
+		changePrice();
 	});
+
+
+
+	function changePrice(){
+		var total_price = 0;
+		$(".cart-row-product").each(function(){
+			$(this).find("tr").each(function(){
+				var priceProduct = parseFloat($(this).find(".cart-unit").children(".price").children(".price").text().replace("$", ""));
+				var soluong = parseFloat($(this).find(".cart_quantity")
+											.children(".cart-plus-minus-button").children(".cart-plus-minus").val());
+				$(this).find(".cart-total").children(".price").text("$" + (priceProduct*soluong).toFixed(2));
+				total_price = total_price + (priceProduct*soluong);
+			});
+		});
+		var price_shipping = parseFloat($("#total_shipping").text().replace("$", ""));
+		var voucher = parseFloat($("#voucher").text().replace("$", ""));
+		$(".cart-total-price #total_product").text("$" + (Math.round(total_price * 100) / 100).toFixed(2));
+		var total = total_price + price_shipping - voucher;
+		$("#total-price").text("$" + (Math.round(total * 100) / 100).toFixed(2));
+	}
 
 
 /*---------------------------------------
@@ -214,21 +272,22 @@ $(document).ready(function(){
 		$(this).parents(".shipping-item").remove();
 		changed();
 	});
-	// .so-luong, .giaSP
 
 	function changed() {
 		var subtotal = 0;
 		$(".shipping-cart-overly").each(function () {
-			subtotal = subtotal + (parseFloat($(this).children(".shipping-item")
-										.children(".shipping-item-text")
-										.children(".giaSP").text().replace("$", "")) * parseFloat($(this).children(".shipping-item")
-										.children(".shipping-item-text").children('span')
-										.children(".so-luong").text()));
-			
+			$(this).find(".shipping-item").each(function () {
+				var price_P = parseFloat($(this).find(".giaSP").text().replace("$", ""));
+				var quantity_P = parseFloat($(this).find(".so-luong").text());
+				subtotal = subtotal + (price_P * quantity_P);
+			});
 		});
 		$(".shipping-total").text("$" + (Math.round(subtotal * 100) / 100).toFixed(2));
 	}
 
+/*---------------------------------------
+	cart page
+----------------------------------------- */
 
 
 

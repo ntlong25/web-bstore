@@ -442,29 +442,25 @@
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<!-- SHOPPING-CART SUMMARY START -->
-						<h2 class="page-title">Shopping-cart summary <span class="shop-pro-item">Your shopping cart contains: 2 products</span></h2>
+						<h2 class="page-title">Giỏ hàng 
+							<span class="shop-pro-item">Có 
+								<span class="num-products">2</span> sản phẩm trong giỏ hàng
+							</span>
+						</h2>
 						<!-- SHOPPING-CART SUMMARY END -->
 					</div>	
 					
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<!-- SHOPING-CART-MENU START -->
-						<div class="shoping-cart-menu">
-							<ul class="step">
-								<li class="step-current first">
-									<span>01. Summary</span>
-								</li>
-								<li class="step-todo third">
-									<span>02. Address</span>
-								</li>
-								<li class="step-todo four">
-									<span>03. Shipping</span>
-								</li>
-								<li class="step-todo last" id="step_end">
-									<span>04. Payment</span>
-								</li>
-							</ul>									
+						<div class="discount">
+							<form action="" method="post">
+								<label for="discount-code">Bạn có mã giảm giá?</label>
+								<input type="text" id="discount-code" name="discount-code">
+								<button class="apply-discount" type="submit">Áp dụng</button>
+							</form>
 						</div>
-						<!-- SHOPING-CART-MENU END -->
+					</div>
+
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<!-- CART TABLE_BLOCK START -->
 						<div class="table-responsive">
 							<!-- TABLE START -->
@@ -472,18 +468,17 @@
 								<!-- TABLE HEADER START -->
 								<thead>
 									<tr>
-										<th class="cart-product">Product</th>
-										<th class="cart-description">Description</th>
-										<th class="cart-avail text-center">Availability</th>
-										<th class="cart-unit text-right">Unit price</th>
-										<th class="cart_quantity text-center">Qty</th>
+										<th class="cart-product">Sản phẩm</th>
+										<th class="cart-description">Mô tả</th>
+										<th class="cart-unit text-right">Giá</th>
+										<th class="cart_quantity text-center">Số lượng</th>
 										<th class="cart-delete">&nbsp;</th>
-										<th class="cart-total text-right">Total</th>
+										<th class="cart-total text-right">Tổng tiền</th>
 									</tr>
 								</thead>
 								<!-- TABLE HEADER END -->
 								<!-- TABLE BODY START -->
-								<tbody>	
+								<tbody class="cart-row-product">	
 									<!-- SINGLE CART_ITEM START -->
 									<tr>
 										<td class="cart-product">
@@ -492,9 +487,8 @@
 										<td class="cart-description">
 											<p class="product-name"><a href="#">Faded Short Sleeves T-shirt</a></p>
 											<small>SKU : demo_1</small>
-											<small><a href="#">Size : S, Color : Orange</a></small>
+											<small>Size : S, Color : Orange</small>
 										</td>
-										<td class="cart-avail"><span class="label label-success">In stock</span></td>
 										<td class="cart-unit">
 											<ul class="price text-right">
 												<li class="price">$16.51</li>
@@ -502,7 +496,7 @@
 										</td>
 										<td class="cart_quantity text-center">
 											<div class="cart-plus-minus-button">
-												<input class="cart-plus-minus" type="text" name="qtybutton" value="0">
+												<input class="cart-plus-minus" type="text" name="qtybutton" value="1" min="1">
 											</div>
 										</td>
 										<td class="cart-delete text-center">
@@ -523,9 +517,8 @@
 										<td class="cart-description">
 											<p class="product-name"><a href="#">Blouse</a></p>
 											<small>SKU : demo_2</small>
-											<small><a href="#">Size : S, Color : Black</a></small>
+											<small>Size : S, Color : Black</small>
 										</td>
-										<td class="cart-avail"><span class="label label-success">In stock</span></td>
 										<td class="cart-unit">
 											<ul class="price text-right">
 												<li class="price special-price">$24.00</li>
@@ -535,7 +528,7 @@
 										</td>
 										<td class="cart_quantity text-center">
 											<div class="cart-plus-minus-button">
-												<input class="cart-plus-minus" type="text" name="qtybutton" value="0">
+												<input class="cart-plus-minus" type="text" name="qtybutton" value="1" min="1">
 											</div>
 										</td>
 										<td class="cart-delete text-center">
@@ -554,9 +547,8 @@
 										<td class="cart-description">
 											<p class="product-name"><a href="#">Printed Summer Dress</a></p>
 											<small>SKU : demo_5</small>
-											<small><a href="#">Size : M, Color : Blue</a></small>
+											<small>Size : M, Color : Blue</small>
 										</td>
-										<td class="cart-avail"><span class="label label-success">In stock</span></td>
 										<td class="cart-unit">
 											<ul class="price text-right">
 												<li class="price special-price">$30.45</li>
@@ -566,7 +558,7 @@
 										</td>
 										<td class="cart_quantity text-center">
 											<div class="cart-plus-minus-button">
-												<input class="cart-plus-minus" type="text" name="qtybutton" value="0">
+												<input class="cart-plus-minus" type="text" name="qtybutton" value="1" min="1">
 											</div>
 										</td>
 										<td class="cart-delete text-center">
@@ -580,19 +572,19 @@
 								</tbody>
 								<!-- TABLE BODY END -->
 								<!-- TABLE FOOTER START -->
-								<tfoot>										
+								<tfoot >										
 									<tr class="cart-total-price">
-										<td class="cart_voucher" colspan="3" rowspan="4"></td>
+										<td class="cart_voucher" colspan="2" rowspan="4"></td>
 										<td class="text-right" colspan="3">Total products (tax excl.)</td>
 										<td id="total_product" class="price" colspan="1">$76.46</td>
 									</tr>
 									<tr>
 										<td class="text-right" colspan="3">Total shipping</td>
-										<td id="total_shipping" class="price" colspan="1">$5.00</td>
+										<td id="total_shipping" class="price" colspan="1">$0.00</td>
 									</tr>
 									<tr>
 										<td class="text-right" colspan="3">Total vouchers (tax excl.)</td>
-										<td class="price" colspan="1">$0.00</td>
+										<td id="voucher" class="price" colspan="1">$0.00</td>
 									</tr>
 									<tr>
 										<td class="total-price-container text-right" colspan="3">

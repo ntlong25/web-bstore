@@ -4795,3 +4795,22 @@ a {
 .gategory-product .gategory-product-list{
 	display: none;
 }
+
+
+.discount{
+	color: #349dff;
+	text-align: center;
+}
+.discount #discount-code{
+	display: inline-block;
+    width: 200px;
+    height: 25px;
+    margin: 0px 20px 20px 20px;
+}
+.discount .apply-discount{
+	border: 2px solid rgba(252, 86, 122, 0.747);
+	border-radius: 5px;
+	width: 100px;
+	height: 35px;
+	background: rgba(252, 86, 122, 0.747);
+}
