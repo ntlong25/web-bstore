@@ -443,16 +443,22 @@
 						<h2>ĐỊA CHỈ NHẬN HÀNG</h2><br>
 						<ul>
 							<div class="form-group primary-form-group p-info-group">
-								<label for="region">Tỉnh/Thành phố<sup>*</sup></label>
-								<input type="text" value="" name="region" id="region" class="form-control input-feild">
+								<label for="ward">Tỉnh/Thành<sup>*</sup></label>
+								<select class="form control" id = "province" none= "province" onchange="changeFunc();">
+									<option value="" selected>Chọn Tỉnh/Thành</option>
+								</select>
 							</div>
 							<div class="form-group primary-form-group p-info-group">
-								<label for="district">Quận huyện<sup>*</sup></label>
-								<input type="text" value="" name="district" id="district" class="form-control input-feild">
+								<label for="ward">Quận Huyện<sup>*</sup></label>
+								<select class="form control" id = "district" none= "district" onchange="changeFuncDistrict();">
+									<option value="" selected>Chọn Quận/Huyện</option>
+								</select>
 							</div>
 							<div class="form-group primary-form-group p-info-group">
-								<label for="ward">Phường xã<sup>*</sup></label>
-								<input type="text" value="" name="ward" id="ward" class="form-control input-feild">
+								<label for="ward">Phường/Xã<sup>*</sup></label>
+								<select class="form control" id = "ward" none= "ward" aria-placeholder="Quận Huyện;">
+									<option value="" selected>Chọn Phường/Xã</option>
+								</select>
 							</div>
 							<div class="form-group primary-form-group p-info-group">
 								<label for="address">Địa chỉ<sup>*</sup></label>
@@ -725,6 +731,9 @@
 	<script>
 		new WOW().init();
 	</script>
+
+	<!-- code js -->
+	<script src="js/code.js"></script>
 
 	<!-- Google Map js -->
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
