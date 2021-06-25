@@ -426,7 +426,7 @@
 					<div class="bstore-breadcrumb">
 						<a href="index.html">Trang Chủ</a>
 						<span><i class="fa fa-caret-right	"></i></span>
-						<span>Tài Khoản</span>
+						<span>Địa chỉ</span>
 						<span><i class="fa fa-caret-right	"></i></span>
 						<span>Thêm địa chỉ</span>
 					</div>
@@ -443,23 +443,29 @@
 						<h2>ĐỊA CHỈ NHẬN HÀNG</h2><br>
 						<ul>
 							<div class="form-group primary-form-group p-info-group">
-								<label for="region">Tỉnh/Thành phố<sup>*</sup></label>
-								<input type="text" value="" name="region" id="region" class="form-control input-feild">
+								<label for="ward">Tỉnh/Thành<sup>*</sup></label>
+								<select class="form control" id = "province" none= "province" onchange="changeFunc();">
+									<option value="" selected>Chọn Tỉnh/Thành</option>
+								</select>
 							</div>
 							<div class="form-group primary-form-group p-info-group">
-								<label for="district">Quận huyện<sup>*</sup></label>
-								<input type="text" value="" name="district" id="district" class="form-control input-feild">
+								<label for="ward">Quận Huyện<sup>*</sup></label>
+								<select class="form control" id = "district" none= "district" onchange="changeFuncDistrict();">
+									<option value="" selected>Chọn Quận/Huyện</option>
+								</select>
 							</div>
 							<div class="form-group primary-form-group p-info-group">
-								<label for="ward">Phường xã<sup>*</sup></label>
-								<input type="text" value="" name="ward" id="ward" class="form-control input-feild">
+								<label for="ward">Phường/Xã<sup>*</sup></label>
+								<select class="form control" id = "ward" none= "ward" aria-placeholder="Quận Huyện;">
+									<option value="" selected>Chọn Phường/Xã</option>
+								</select>
 							</div>
 							<div class="form-group primary-form-group p-info-group">
 								<label for="address">Địa chỉ<sup>*</sup></label>
 								<textarea type="text" value="" name="address" rows="5" id="address" class="form-control input-feild" placeholder="Nhập địa chỉ"></textarea>
 							</div>
 							<div class="submit-button p-info-submit-button">
-								<a href="checkout-registration.html" id="SubmitCreate" class="btn main-btn">
+								<a href="checkout-address.html" id="SubmitCreate" class="btn main-btn">
 									<span>
 										Cập nhật
 										<i class="fa fa-chevron-right"></i>
@@ -472,13 +478,13 @@
 			</div>
 			<!-- ADDRESS END -->
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<!-- BACK TO MY-ACCCOUNT START -->
+				<!-- BACK TO checkout-address START -->
 				<div class="home-link-menu">
 					<ul>
-						<li><a href="my-account.html"><i class="fa fa-chevron-left"></i> Trở về</a></li>
+						<li><a href="checkout-address.html"><i class="fa fa-chevron-left"></i> Trở về</a></li>
 					</ul>
 				</div>
-				<!-- BACK TO MY-ACCCOUNT END -->
+				<!-- BACK TO checkout-address END -->
 			</div>
 		</div>
 	</div>
@@ -725,6 +731,9 @@
 	<script>
 		new WOW().init();
 	</script>
+
+	<!-- code js -->
+	<script src="js/code.js"></script>
 
 	<!-- Google Map js -->
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
