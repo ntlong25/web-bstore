@@ -16,7 +16,29 @@ $(document).ready(function(){
 	});
 	$(".shipping-total").text("$" + (Math.round(subtotal * 100) / 100).toFixed(2));
 
-		
+	
+/*---------------------------------------
+	update number product in shop gird
+----------------------------------------- */	
+
+	function update_num_product_shopgird() {
+		var num_product = 0;
+
+		$(".all-gategory-product").each(function(){
+			$(this).find(".row").each(function(){
+				$(this).find(".gategory-product").each(function(){
+					$(this).find(".gategory-product-list").each(function(){
+						num_product +=1;
+					});
+				});
+			});
+		});
+		$(".num_product_shopgird").text(num_product);
+	}
+	update_num_product_shopgird();
+
+
+
 /*---------------------------------------
 	update number product in cart page
 ----------------------------------------- */
@@ -315,6 +337,7 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
 	});	
+
 
 
 
