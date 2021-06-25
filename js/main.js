@@ -21,14 +21,17 @@ $(document).ready(function(){
 	update number product in cart page
 ----------------------------------------- */
 
-	var num_product = 0;
+	function update_num_product() {
+		var num_product = 0;
 
-	$(".cart-row-product").each(function(){
-		$(this).find("tr").each(function(){
-			num_product +=1;
+		$(".cart-row-product").each(function(){
+			$(this).find("tr").each(function(){
+				num_product +=1;
+			});
 		});
-	});
-	$(".num-products").text(num_product);
+		$(".num-products").text(num_product);
+	}
+	update_num_product();
 
 
 
@@ -243,6 +246,11 @@ $(document).ready(function(){
 		changePrice();
 	});
 
+	$(".cart_quantity_delete").click(function () {
+		$(this).parents(".cart-delete").parents("tr").remove();
+		changePrice();
+		update_num_product();
+	});
 
 
 	function changePrice(){

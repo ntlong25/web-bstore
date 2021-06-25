@@ -133,7 +133,7 @@ img {
 	-ms-transform:scale(1.1);
 	-o-transform:scale(1.1);
 }
-.terms-of-service p, .cat-search, .header-right-callus h3, .shipping-checkout-btn a, .nivo-caption h2, .facality-text h3, .newsletter-area h2, .newsletter-btn, .fllow-us-area h2, .footer-top-right-1 h2, .footer-top-right-2 h2, .company-list-menu ul li, .our-testimonials p, .home-link-menu ul li a, .product-left-sidebar h2.left-title, span.sidebar-title, .category-header-text h2, .product-category-title h1, .product-category-title h1 span.count-product, .product-shooting-bar label, .compare-button, .showing-next-prev nav ul li a, .showing-next-prev nav ul li a.pagi-num, .showall-button, .list-view-content .customar-comments-box a, .list-view-content .overlay-content-list ul li a.add-cart-text, div.file-uploader span.action, .error-form p, form.error-ser-form .error-ser-btn, .primary-form-group label, .main-btn, .success-full-account-create p, .p-info-group span, .Permalink p, .wishlists-item-title a, .Permalink a, a.wish-save, span.shop-pro-item, ul.step li a, ul.step li span, ul.step li.step-current span, ul.step li.step-current-end span, ul.step li.step-current, ul.step li.step-current-end, #cart-summary tbody td.cart-avail span, .price-percent-reduction, #cart-summary tfoot td.text-right, #cart-summary tfoot tbody td.cart-unit, #cart-summary tbody tfoot td.cart-unit, #cart-summary tfoot tbody td.cart-total, #cart-summary tbody tfoot td.cart-total, #cart-summary tfoot td#total-price-container, .returne-continue-shop a.continueshoping, .returne-continue-shop a.procedtocheckout, p.filup-below, .update-button a, .add-new-address a, .product-delivery-address p, table.delivery-table tr td .carrey-info strong, .single-payment-method a, .single-payment-method span, button.large-btn, .single-product-descirption h2, .single-product-condition p, .single-product-desc .product-in-stock p, .product-in-stock p span, .single-product-quantity > p, .single-product-size p, .single-product-color p, .add-cart-text, .table-data-sheet tr td:first-child, .tab-rating-box span, .review-author-info strong, .review-author-info span, a.write-review-btn, .single-product-right-sidebar h2.left-title, body.index-2 .category-heading h2, body.index-2 .category-menu-list ul li a.menu-item-heading {
+.terms-of-service p, .cat-search, .header-right-callus h3, .shipping-checkout-btn a, .nivo-caption h2, .facality-text h3, .newsletter-area h2, .newsletter-btn, .fllow-us-area h2, .footer-top-right-1 h2, .footer-top-right-2 h2, .company-list-menu ul li, .our-testimonials p, .home-link-menu ul li a, .product-left-sidebar h2.left-title, span.sidebar-title, .category-header-text h2, .product-category-title h1, .product-category-title h1 span.count-product, .product-shooting-bar label, .compare-button, .showing-next-prev nav ul li a, .showing-next-prev nav ul li a.pagi-num, .showall-button, .list-view-content .customar-comments-box a, .list-view-content .overlay-content-list ul li a.add-cart-text, div.file-uploader span.action, .error-form p, form.error-ser-form .error-ser-btn, .primary-form-group label, .main-btn, .success-full-account-create p, .p-info-group span, .Permalink p, .wishlists-item-title a, .Permalink a, a.wish-save, span.shop-pro-item, ul.step li a, ul.step li span, ul.step li.step-current span, ul.step li.step-current-end span, ul.step li.step-current, ul.step li.step-current-end, #cart-summary tbody td.cart-avail span, .price-percent-reduction, #cart-summary tfoot td.text-right, #cart-summary tfoot tbody td.cart-unit, #cart-summary tbody tfoot td.cart-unit, #cart-summary tfoot tbody td.cart-total, #cart-summary tbody tfoot td.cart-total, #cart-summary tfoot td#total-price-container, .returne-continue-shop a.continueshoping, .returne-continue-shop a.procedtoCheckOut, p.filup-below, .update-button a, .add-new-address a, .product-delivery-address p, table.delivery-table tr td .carrey-info strong, .single-payment-method a, .single-payment-method span, button.large-btn, .single-product-descirption h2, .single-product-condition p, .single-product-desc .product-in-stock p, .product-in-stock p span, .single-product-quantity > p, .single-product-size p, .single-product-color p, .add-cart-text, .table-data-sheet tr td:first-child, .tab-rating-box span, .review-author-info strong, .review-author-info span, a.write-review-btn, .single-product-right-sidebar h2.left-title, body.index-2 .category-heading h2, body.index-2 .category-menu-list ul li a.menu-item-heading {
 	font-weight:bold;
 }
 span.mobile-menu-title, .drodown-mega-menu .mega-menu-list ul li a, .new-mark-box, .single-latest-post p, .read-more a, .facality-text span, .staticblock p, .info-text p, .info-text p a, .single-f-widget ul li a, .copy-right address, body.index-2 .category-heading h2, body.index-2 .category-menu-list ul li a, .home-link-menu ul li a, .product-category-title h1 span.count-product, form.error-ser-form .error-ser-btn, .wishlists-chart table tr td span, .Permalink a, a.wish-save, span.shop-pro-item, .price-percent-reduction, .update-button a, .add-new-address a, .list-view-content .review-box span{
@@ -3818,7 +3818,7 @@ ul.address li span{
 	color: #777777;
 	margin-right: 11px;
 }
-.returne-continue-shop a.procedtocheckout{
+.returne-continue-shop a.procedtoCheckOut{
 	background: #ff4f4f none repeat scroll 0 0;
 	border-radius: 4px;
 	color: #fff;
@@ -3829,11 +3829,11 @@ ul.address li span{
 	padding: 0 16px;
 	transition: all 500ms ease 0s;
 }
-.returne-continue-shop a.procedtocheckout:hover{
+.returne-continue-shop a.procedtoCheckOut:hover{
 	background: #3a3d42 none repeat scroll 0 0;
 	border-color: #3a3d42;	
 }
-.returne-continue-shop a.procedtocheckout i{
+.returne-continue-shop a.procedtoCheckOut i{
 	font-size: 25px;
 	line-height: 50px;
 	margin-left: 9px;
