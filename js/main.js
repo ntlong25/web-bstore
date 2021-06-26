@@ -295,7 +295,7 @@ $(document).ready(function(){
 
 
 /*---------------------------------------
-	cart
+	xóa hàng trong giỏ hàng tạm
 ----------------------------------------- */
 
 	$(".remove").click(function () {
@@ -305,14 +305,17 @@ $(document).ready(function(){
 
 	function changed() {
 		var subtotal = 0;
+		var subproduct = 0;
 		$(".shipping-cart-overly").each(function () {
 			$(this).find(".shipping-item").each(function () {
 				var price_P = parseFloat($(this).find(".giaSP").text().replace("$", ""));
 				var quantity_P = parseFloat($(this).find(".so-luong").text());
 				subtotal = subtotal + (price_P * quantity_P);
+				subproduct +=1;
 			});
 		});
 		$(".shipping-total").text("$" + (Math.round(subtotal * 100) / 100).toFixed(2));
+		$(".ajax-cart-quantity").text(subproduct);
 	}
 
 /*---------------------------------------
@@ -338,7 +341,13 @@ $(document).ready(function(){
 		return false;
 	});	
 
+/*---------------------------------------
+	thêm hàng vào giỏ hàng tạm
+----------------------------------------- */
 
+	$(".single-product-add-cart .add-cart-text").on("click", function(){
+		$(".shipping-cart-overly").append('<div class="shipping-item"><span class="remove"><i class="fa fa-remove" aria-hidden="true"></i></span><div class="shipping-item-image"><a href="#"><img src="img/shopping-image.jpg" alt="shopping image" /></a></div><div class="shipping-item-text"><span><p class="so-luong">2</p><a href="#" class="pro-cat">Watch</a></span><span class="pro-quality"><a href="#">S,Black</a></span><p class="giaSP">$22.95</p></div></div>');
+	});
 
 
 
