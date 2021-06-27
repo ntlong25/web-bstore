@@ -37,6 +37,25 @@ $(document).ready(function(){
 	}
 	update_num_product_shopgird();
 
+/*---------------------------------------
+	update number product in shop list
+----------------------------------------- */	
+
+function update_num_product_shoplist() {
+	var num_product = 0;
+
+	$(".all-gategory-product").each(function(){
+		$(this).find(".row").each(function(){
+			$(this).find(".gategory-product").each(function(){
+				$(this).find(".cat-product-list").each(function(){
+					num_product +=1;
+				});
+			});
+		});
+	});
+	$(".num_product_shoplist").text(num_product);
+}
+update_num_product_shoplist();
 
 
 /*---------------------------------------
