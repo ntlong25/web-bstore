@@ -3799,6 +3799,9 @@ ul.address li span{
 	font-size:13px;
 	text-transform:capitalize;
 }
+ul.address li span.address_name{
+	font-weight: bold;
+}
 .returne-continue-shop{
 	margin:0 0 20px;
 	overflow: hidden;
@@ -3911,7 +3914,7 @@ p.assign-address{
 	margin: 20px 0 10px;
 	display:block;
 }
-.update-button a, .add-new-address a{
+.update-button button{
 	background: #ff4f4f none repeat scroll 0 0;
 	border-color: #ff4f4f;
 	border-radius: 0;
@@ -3921,21 +3924,17 @@ p.assign-address{
 	padding: 5px 10px 5px 9px;
 	transition: all 500ms ease 0s;	
 }
-.update-button a i, .add-new-address a i{
-	margin-left:4px;
-}
-.update-button a:hover, .add-new-address a:hover{
+.update-button button:hover{
 	background: #3a3d42 none repeat scroll 0 0;
 	border-color: #3a3d42;
 	color:#fff;	
 }
-.add-new-address a.new-address-link{
-	display: inline-block;
-	margin-bottom: 15px;
+.add-new-address{
+	margin: 20px 0px 20px 0px;
 }
-.add-new-address label{
-	font-size:13px;
-	text-transform:none;
+.add-new-address a.new-address-link{
+	margin-bottom: 15px;
+	color: #2d8cff;
 }
 .type-address-group label{
 	color:#333;
@@ -4814,3 +4813,134 @@ a {
 	height: 35px;
 	background: rgba(252, 86, 122, 0.747);
 }
+
+/* LOGIN */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .btn_login {
+	background-color: #5597fc;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 50px;
+	border: none;
+	cursor: pointer;
+	width: 75%;
+  }
+  
+  .btn_login:hover {
+	opacity: 0.8;
+  }
+  
+
+  
+  .container_login {
+	padding: 16px 75px 16px 75px;
+  }
+  
+  span.psw {
+	float: right;
+  }
+  .login_content{
+	  padding-bottom: 30px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 999; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 20px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 40%; /* Could be more or less, depending on screen size */
+  }
+ 
+  
+  /* Add Zoom Animation */
+  .animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+  }
+	
+  @keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.btn_cancel {
+	   width: 100%;
+	}
+  }
+
+  	.login-or {
+		position: relative;
+		color: #aaa;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.span-or {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: -2px;
+		margin-left: -25px;
+		background-color: #fff;
+		width: 50px;
+		text-align: center;
+	}
+	.hr-or {
+		height: 1px;
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+	.google, .facebook {
+		color:rgb(83, 81, 81);
+		width:100%;
+		height:40px;
+		text-align:center;
+		outline:none;
+		border: 1px solid lightgrey;
+	}
+
+	.google:hover{
+		background-color: #ff4b33;
+	}
+
+	.facebook:hover{
+		background-color: #0073ff;
+	}

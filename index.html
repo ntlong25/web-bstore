@@ -82,6 +82,44 @@
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
+	<!-- LOGIN START -->
+	<div id="login_form" class="modal">
+  
+		<form class="modal-content animate" action="" method="post">
+			
+		
+			<div class="container_login">
+				<div class="text-center">
+					<h1 class="login_content" style="font-weight: bold;">Login</h1>
+				 </div>
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+		
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+				
+				<button class="btn_login" type="submit">Login</button>
+				<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+			<div class="container_login">
+				<div class="login-or">
+					<hr class="hr-or">
+					<span class="span-or">or</span>
+				 </div>
+				<p class="text-center">
+					<a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google"></i> Login with Google</a>
+				</p>
+				<p class="text-center">
+					<a href="javascript:void();" class="facebook btn mybtn"><i class="fa fa-facebook"></i> Login with Facebook</a>
+				</p>
+			</div>
+			
+		</form>
+	</div>
+		<!-- LOGIN END -->
 	<!-- HEADER-TOP START -->
 	<div class="header-top">
 		<div class="container">
@@ -101,7 +139,7 @@
 						<nav>
 							<ul class="list-inline">
 								<li><a href="my-account.html">Tài khoản</a></li>
-								<li><a href="login.html">Đăng Nhập</a></li>
+								<li><a href="#" onclick="document.getElementById('login_form').style.display='block'">Đăng Nhập</a></li>
 								<li><a href="registration.html">Đăng Ký</a></li>
 							</ul>									
 						</nav>
