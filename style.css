@@ -4829,9 +4829,10 @@ input[type=text], input[type=password] {
   /* Set a style for all buttons */
   .btn_login {
 	background-color: #5597fc;
+	border-radius: 30px;
 	color: white;
-	padding: 14px 20px;
-	margin: 8px 50px;
+	padding: 15px 100px;
+	margin: 8px 56px;
 	border: none;
 	cursor: pointer;
 	width: 75%;
