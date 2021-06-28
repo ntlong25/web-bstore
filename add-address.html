@@ -443,13 +443,21 @@
 						<h2>ĐỊA CHỈ NHẬN HÀNG</h2><br>
 						<ul>
 							<div class="form-group primary-form-group p-info-group">
-								<label for="ward">Tỉnh/Thành<sup>*</sup></label>
+								<label for="name">Họ tên<sup>*</sup></label>
+								<input type="text" name="name" id="name">
+							</div>
+							<div class="form-group primary-form-group p-info-group">
+								<label for="number_phone">Số điện thoại<sup>*</sup></label>
+								<input type="text" name="number_phone" id="number_phone">
+							</div>
+							<div class="form-group primary-form-group p-info-group">
+								<label for="province">Tỉnh/Thành<sup>*</sup></label>
 								<select class="form control" id = "province" none= "province" onchange="changeFunc();">
 									<option value="" selected>Chọn Tỉnh/Thành</option>
 								</select>
 							</div>
 							<div class="form-group primary-form-group p-info-group">
-								<label for="ward">Quận Huyện<sup>*</sup></label>
+								<label for="district">Quận Huyện<sup>*</sup></label>
 								<select class="form control" id = "district" none= "district" onchange="changeFuncDistrict();">
 									<option value="" selected>Chọn Quận/Huyện</option>
 								</select>
