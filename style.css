@@ -532,7 +532,7 @@ span.mobile-menu-title{
 	border: none;
 	box-shadow: none;
 	outline: 0 none;
-	border-left:1px solid #d7d7d7;	
+	border-left:1px solid #d7d7d7;
 }
 .search-product{
 	position:relative;
@@ -1206,7 +1206,7 @@ div.nivo-controlNav a.active{
 5.1 tab product
 -------------------------*/	
 .tab-bg-product-area{
-	background: rgba(0, 0, 0, 0) url("img/product/bkg_product_tab.jpg") no-repeat scroll 0 0 / 100% 100%;
+	
 	margin-top: 50px;
 	padding: 45px 10px 15px;
 }
@@ -4821,9 +4821,12 @@ a {
 /* LOGIN */
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+.login-user, .login-pass {
+	width: 100%;
 	padding: 12px 20px;
+	margin: 8px 0;
 	display: inline-block;
+	border: 1px solid #ccc;
 	box-sizing: border-box;
   }
   
