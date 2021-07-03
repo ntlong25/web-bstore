@@ -1,0 +1,11 @@
+.personal-info-content .p-info-group{
+    text-align: left;
+}
+.personal-info-content .p-info-group label{
+    text-align: left;
+}
+
+.personal-info-content .p-info-group input text{
+    display: block;
+}
+
