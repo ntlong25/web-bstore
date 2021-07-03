@@ -3180,6 +3180,7 @@ form.error-ser-form .error-ser-btn:hover{
 	max-width:270px
 }
 .birth-day, .birth-month, .birth-year{
+	text-align: center;
 	background: rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll -412px 0px;
 	border-left: 1px solid #d6d4d4;
 	float: left;
