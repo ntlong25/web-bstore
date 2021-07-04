@@ -1,11 +1,5 @@
 /*----------------------------------------------------------------
-Template Name: BStore - Responsive eCommerce Template
-Template URI: http://bootexperts.com
-Description: Bootstrap eCommerce template
-Author: BootExperts
-Author URI: http://bootexperts.com
-Version: 1.0
--------------------------------------------------------------------
+
     CSS INDEX
     ===================
 	1. Theme Default CSS (body, link color, section etc)
@@ -207,6 +201,7 @@ h2.left-title a:hover{
 	padding-left:15px;
 	padding-right:15px;
 }
+
 h2.center-title{
 	border-top: 1px solid #b0b1b3;
 	color: #3a3d42;
@@ -532,7 +527,7 @@ span.mobile-menu-title{
 	border: none;
 	box-shadow: none;
 	outline: 0 none;
-	border-left:1px solid #d7d7d7;
+	border-left:1px solid #d7d7d7;	
 }
 .search-product{
 	position:relative;
@@ -546,7 +541,7 @@ span.mobile-menu-title{
 	border-radius: 30px;
 }
 .cat-search{
-	background:#fff url("img/caret.png") no-repeat scroll 92% 45%;
+	background:#fff url("~/Assets/img/caret.png") no-repeat scroll 92% 45%;
 	border: medium none;
 	color: #464646;
 	cursor: pointer;
@@ -1204,10 +1199,11 @@ div.nivo-controlNav a.active{
 }
 /*-----------------------
 5.1 tab product
--------------------------*/	
-.tab-bg-product-area{
-	
-	margin-top: 50px;
+-------------------------*/
+.center-title-highlight{
+	padding: 50px 15px 0px;
+}
+.tab-bg-product-area {
 	padding: 45px 10px 15px;
 }
 .tab-content{}
@@ -1236,8 +1232,8 @@ div.bg-tab-content-area div.owl-controls {
 	width: 71px;
 }
 div.bg-tab-content-area i.owl-prev-icon, div.bg-tab-content-area i.owl-next-icon{
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
 }
 div.bg-tab-content-area i.owl-prev-icon:hover, div.bg-tab-content-area i.owl-next-icon:hover{
 	border: 2px solid #FF4F4F;
@@ -1253,9 +1249,9 @@ div.bg-tab-content-area i.owl-prev-icon:hover, div.bg-tab-content-area i.owl-nex
 	margin-bottom:0px;
 }
 .product-bg-nav li a{
-	background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0;
+	background: rgba(133, 133, 133, 0.4) none repeat scroll 0 0;
 	border-radius: 0;
-	color: #fff;
+	color: rgb(0, 0, 0);
 	display: inline-block;
 	margin-right: 10px;
 	padding: 0px 20px;
@@ -1268,7 +1264,7 @@ div.bg-tab-content-area i.owl-prev-icon:hover, div.bg-tab-content-area i.owl-nex
 	font-weight:normal;
 }
 .product-bg-nav li a:hover{
-	background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0;
+	background: rgba(39, 32, 32, 0.4) none repeat scroll 0 0;
 	color: #fff;
 }
 .product-bg-nav > li.active > a, .product-bg-nav > li.active > a:focus, .product-bg-nav > li.active > a:hover {
@@ -2100,55 +2096,7 @@ h2.about-page-title{
 	border-bottom:0px solid #d6d4d4;
 }
 .our-team{}
-/*-----------------------
-11.1 testimonials
--------------------------*/
-.our-testimonials{}
-.single-testimonials{
-    border-color: #dfdede #d2d0d0 #b0afaf;
-    border-image: none;
-    border-style: solid;
-    border-width: 1px;
-    margin: 4px 0 13px;
-    position: relative;
-    display: block;
-}
-.testimonials-text{
-	background: #fbfbfb;
-	background: -moz-linear-gradient(#fbfbfb, #fefefe);
-	background: -webkit-linear-gradient(#fbfbfb, #fefefe);
-	background: -o-linear-gradient(#fbfbfb, #fefefe);
-	background: -ms-linear-gradient(#fbfbfb, #fefefe);/*For IE10*/
-	background: linear-gradient(#fbfbfb, #fefefe);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#fbfbfb', endColorstr='#fefefe');	
-	border: 1px solid #fff;
-	padding: 19px 18px 11px;
-	font-size:13px;
-	position:relative;
-}
-.testimonials-text:after{
-	background: rgba(0, 0, 0, 0) url("img/testimon-after.gif") no-repeat scroll 0 0;
-	bottom: -16px;
-	content: "";
-	height: 15px;
-	left: 21px;
-	position: absolute;
-	width: 15px;
-}
-.our-testimonials p{
-	color:#333;
-	font-size:13px;
-	margin:10px 0 15px;
-	padding-left:45px;
-}
-span.before{
-	background: rgba(0, 0, 0, 0) url("img/bs-before-q.png") no-repeat scroll left top;
-	padding-right: 27px;
-}
-span.after{
-	background: rgba(0, 0, 0, 0) url("img/bs-after-q.png") no-repeat scroll right top;
-	padding-left: 30px;
-}
+
 /*-----------------------
 12. my account page
 -------------------------*/
@@ -2358,7 +2306,6 @@ ul.filtering-menu{
 	width: 72%;
 }
 
-
 ul.product-color-var{
 	overflow-y:scroll;
 	max-height:200px;
@@ -2507,7 +2454,7 @@ ul.gategory-product li.gategory-product-list div.single-product-item .overlay-co
 	margin-top:4px;
 }
 .short-select-option{
-	background: rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll -302px 0px;
+	background: rgba(0, 0, 0, 0) url("~/Assets/img/sprite.png") no-repeat scroll -302px 0px;
 	float: right;
 	height: 27px;
 	border-left:1px solid #d6d4d4;
@@ -2540,7 +2487,7 @@ ul.gategory-product li.gategory-product-list div.single-product-item .overlay-co
 	float: left;
 }
 .s-page-select-option{
-	background: rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll -435px 0px;
+	background: rgba(0, 0, 0, 0) url("~/Assets/img/sprite.png") no-repeat scroll -435px 0px;
 	border-left: 1px solid #d6d4d4;
 	float: left;
 	height: 27px;
@@ -2853,7 +2800,7 @@ form.contact-form label{
 	margin: 14px 0;
 }
 .con-form-select{
-	background: rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll -230px 0;
+	background: rgba(0, 0, 0, 0) url("~/Assets/img/sprite.png") no-repeat scroll -230px 0;
 	border-left: 1px solid #d6d4d4;
 	height: 27px;
 	width: 262px;	
@@ -2916,7 +2863,7 @@ div.file-uploader input[type=file]{
 }
 div.file-uploader span.action {
 	-moz-user-select: none;
-	background: rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll 0 -378px;
+	background: rgba(0, 0, 0, 0) url("~/Assets/img/sprite.png") no-repeat scroll 0 -378px;
 	color: #fff;
 	cursor: pointer;
 	display: inline;
@@ -3180,8 +3127,7 @@ form.error-ser-form .error-ser-btn:hover{
 	max-width:270px
 }
 .birth-day, .birth-month, .birth-year{
-	text-align: center;
-	background: rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll -412px 0px;
+	background: rgba(0, 0, 0, 0) url("~/Assets/img/sprite.png") no-repeat scroll -412px 0px;
 	border-left: 1px solid #d6d4d4;
 	float: left;
 	height: 27px;
@@ -3252,193 +3198,7 @@ span.radio-box{}
 span.required-field{
 	float:right;
 }
-/*-----------------
-19. wishlist page
-------------------*/
-.wishlists-area{
-	margin-bottom:30px;
-}
-.wishlists-area a.main-btn{
-	padding:10px 15px;
-	margin-bottom:0;
-}
-.wishlists-area a.main-btn i{
-	font-size:15px;
-}
-.new-wishlists-box{}
-.wishlists-form-group{
-	margin-bottom:12px;
-	overflow:hidden;
-}
-.wishlists-form-group .input-feild{
-	background: #fbfbfb none repeat scroll 0 0;
-}
-.wishlists-form-group .white{
-	background: #fff none repeat scroll 0 0;
-}
-.primary-box-content .submit-button i{
-	font-size:20px;
-}
-.wishlists-chart{
-	margin-bottom:35px;
-}
-.wishlists-chart table{
-	margin:0;
-}
-.wishlists-chart table tr{}
-div.wishlists-chart table tr th{
-	background: #fbfbfb none repeat scroll 0 0;
-	border-bottom-width: 1px;
-	color: #333;
-	vertical-align: middle;
-	font-size:13px;
-	line-height:18px;
-	padding: 9px 8px 11px 18px;
-}
-div.wishlists-chart table tr th.wish-name{}
-div.wishlists-chart table tr td{
-	line-height: 30px;
-	padding: 9px 45px 11px 18px;
-}
-.wishlists-chart table tr td span{
-	font-size: 13px;
-	line-height: 18px;
-}
-div.wishlists-chart table tr td a{
-	color:#333;
-}
-div.wishlists-chart table tr td a.dele-wish-list{
-	color:#777;
-}
-div.wishlists-chart table tr td a:hover{
-	color:#777;
-}
-.wishlists-item{}
-.wishlists-item-title{
-	position:relative;
-	border-bottom:1px solid #d6d4d4;
-	padding-bottom:15px;
-	margin-bottom:20px;
-	margin-top:10px;
-}
-.wishlists-item-title a{}
-.wishlists-item-title a i{
-	position:absolute;
-	right:0;
-	top:0;
-	color:#777;
-}
-.Permalink{}
-.Permalink input[type=text]{
-	cursor:not-allowed;
-	border: 1px solid #d6d4d4;
-	border-radius: 0;
-	box-shadow: none;
-	color: #777;
-	height: 33px;
-	padding-left: 6px;	
-	font-size:13px;
-	margin-bottom:20px;
-}
-.Permalink input[type=text]:focus{
-	box-shadow:none;
-}
-.Permalink p, .wishlists-item-title a{
-	color:#333;
-	font-size:13px;
-	margin:0px 0 5px 0;
-}
-.Permalink .view-permalink{}
-.Permalink a, a.wish-save{
-	padding:4px 10px;
-	background: #ff4f4f none repeat scroll 0 0;
-	border-color: #ff4f4f;
-	color: #fff;
-	font-size:13px;
-	line-height:17px;
-	transition: all 500ms ease 0s;
-	display:inline-block;
-	margin-top:10px;
-}
-.Permalink a:hover, a.wish-save:hover{
-	background:#3a3d42 none repeat scroll 0 0;
-}
-.wishlists-all-item{}
-.wishlists-single-item{
-	margin-bottom:25px;
-}
-.wishlist-image{
-	padding:10px;
-	border:1px solid #d6d4d4;
-	margin:10px 0 10px;
-}
-.wishlist-image a{}
-.wishlist-image a img{
-	width:100%;
-}
-.wishlist-title{
-	margin-bottom:10px;
-	padding-top:10px;
-}
-.wishlist-title p{
-	color: #3a3939;
-	font-size: 17px;
-	line-height: 23px;
-	margin: 0;
-	position:relative;
-	padding-right:17px;
-}
-.wishlist-title p a{
-	position:absolute;
-	top:0;
-	right:0;
-}
-.wishlist-title p a i{
-	font-size:8px;
-	background:#777;
-	color:#fff;
-	padding:3px;
-	border-radius:50%;
-	width:14px;
-	height:14px;
-	text-align:center;
-}
-.wishlist-title p a i:hover{
-	background:#999;
-}
-.wishlists-single-item a.wish-save{}
-.wish-back-link{
-	margin-top:25px;
-	border-top:1px solid #d6d4d4;
-	padding-top:10px;
-	margin-bottom:30px;
-}
-.wish-back-link a{
-	margin-right:8px;
-}
-.wish-prioriti{}
-.wish-prioriti{
-	background:rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll -303px -81px;
-	border-left: 1px solid #d6d4d4;
-	height: 27px;
-	width: 189px;
-} 
-.wish-prioriti select{
-	width:189px;
-	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-	opacity: 1;
-	height:28px;
-	border: medium none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	outline: medium none;
-	color:#777;
-	font-size:12px;
-	padding-left:5px;
-} 
-.wish-prioriti:hover{
-	background-position:-303px -108px;
-}
+
 /*-----------------
 20. cart page
 ------------------*/
@@ -3843,223 +3603,7 @@ div.create-new-account .form-content p{
 div.registered-account .primary-form-group input{
 	max-width:271px;
 }
-/*----------------------------------------
-22. checkout-address
-------------------------------------------*/
-p.filup-below{
-	margin:0;
-	color:#333;
-	font-size:13px;
-	line-height:20px;
-} 
-.felup-required{
-	color: red;
-	margin: 9px 0 16px;
-	font-size:13px;
-	line-height:20px;
-}
-.selected-state, .selected-country, .delivery-address{
-	width:272px;
-	background:rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll -221px 0px;
-	margin-bottom:0;
-}
-.selected-state select#sel-state, .selected-country select#sel-country, .delivery-address select#deli-address{
-	width:272px;
-}
-.selected-state:hover, .selected-country:hover, .delivery-address:hover{
-	background:rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll -221px -27px;
-} 
-.deli-address-group label{
-	margin-top:0;
-	text-transform:none;
-}
-.chose-address{
-	margin:10px 0 22px;
-}
-.chose-address a{
-	position:relative;
-	top:2px;
-	left:-3px;
-}
-textarea.addinfobox{
-	height:80px;
-	resize:none;
-}
-textarea.addinfobox:focus, textarea.addinfobox:active{
-	box-shadow:none;
-	border: 1px solid #d6d4d4;
-}
-p.assign-address{
-	margin:5px 0 7px;
-} 
-.update-button{
-	margin: 20px 0 10px;
-	display:block;
-}
-.update-button button{
-	background: #ff4f4f none repeat scroll 0 0;
-	border-color: #ff4f4f;
-	border-radius: 0;
-	color: #fff;
-	font-size:13px;
-	line-height:17px;
-	padding: 5px 10px 5px 9px;
-	transition: all 500ms ease 0s;	
-}
-.update-button button:hover{
-	background: #3a3d42 none repeat scroll 0 0;
-	border-color: #3a3d42;
-	color:#fff;	
-}
-.add-new-address{
-	margin: 20px 0px 20px 0px;
-}
-.add-new-address a.new-address-link{
-	margin-bottom: 15px;
-	color: #2d8cff;
-}
-.type-address-group label{
-	color:#333;
-}
-.type-address-group textarea{
-	height:135px;
-	border: 1px solid #d6d4d4;
-	border-radius: 0;
-	box-shadow: none;
-	color: #d6d4d4;
-	padding-left: 6px;	
-	resize:none;
-	margin-bottom:15px;
-}
-.type-address-group textarea:focus, .type-address-group textarea:active{
-	box-shadow:none;
-	border: 1px solid #d6d4d4;
-}
-/*----------------------------------------
-23. checkout-shipping
-------------------------------------------*/
-.product-delivery-option{
-	background:#FBFBFB;
-	padding:14px 18px;
-	margin-bottom:30px;
-	border: 1px solid #d6d4d4;
-} 
-.product-delivery-address{} 
-.product-delivery-address p{
-	margin: 0 0 17px;	
-} 
-.product-delivery-address p, table.delivery-table tr td, table.delivery-table tr td .carrey-info strong, .terms-of-service p, .terms-of-service span.agree{
-	font-size: 13px;
-}
-.product-delivery-address p, .terms-of-service p, .terms-of-service span.agree a{
-	color: #333;
-}
-.product-delivery-item{} 
-.product-delivery-single-item{
-	background: #fff none repeat scroll 0 0;
-} 
-.product-delivery-single-item .delivery-table{} 
-td.delivery-option-radio{
-	width:5%;
-	text-align:center;
-}
-td.delivery-method-icon{
-	text-align:center;
-	width:11%;
-}
-td.carrey-info{
-	width:66%;
-}
-td.carrey-cost{
-	width:18%;
-}
-td.delivery-option-radio{}
-table.delivery-table{
-	margin-bottom:20px;
-}
-table.delivery-table tr{}
-table.delivery-table tr td{
-	line-height:18px;
-	padding:10px 20px;
-}
-table.delivery-table tr td .dalivery-radio{}
-table.delivery-table tr td .dalivery-radio .radio-box{}
-table.delivery-table tr td .dalivery-radio .radio-box input[type=radio]{
-}
-table.delivery-table tr td .dalivery-radio .radio-box label{
-}
-table.delivery-table tr td .delivery-method-icon{}
-table.delivery-table tr td .delivery-method-icon img{
-max-width: inherit;
-}
-table.delivery-table tr td .carrey-info{}
-table.delivery-table tr td .carrey-info strong{
-	line-height:18px;
-}
-table.delivery-table tr td .carrey-cost{}
-.terms-of-service{} 
-.terms-of-service p{
-	margin: 0 0 5px;
-} 
-.terms-of-service span.agree{
-	color: #777;
-	font-weight: normal;
-	line-height: 25px;
-} 
-.terms-of-service span.agree a{
-	text-decoration:underline;
- } 
-.terms-of-service span.agree a:hover{
-	text-decoration:none;
-}
-/*-----------------
-24. checkout
-------------------*/
-.four-payment-method{
-	margin-bottom:10px;
-	overflow:hidden;
-} 
-.single-payment-method{
-	margin-bottom:10px;
-} 
-.single-payment-method a{
-	display: block;
-    border: 1px solid #d6d4d4;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    font-size: 17px;
-    line-height: 23px;
-    color: #333;
-    padding: 33px 40px 34px 99px;
-    letter-spacing: -1px;
-    position: relative;
-} 
-.single-payment-method a:hover{
-	background:rgba(51, 46, 46, 0.05);
-}
-.single-payment-method span{
-    color: #777;
-} 
-.single-payment-method i{
-	color: #777;
-	font-size: 26px;
-	line-height: 25px;
-	position: absolute;
-	right: 15px;
-} 
-.payment-method-one{
-	background: rgba(0, 0, 0, 0) url("img/bankwire.png") no-repeat scroll 12px 15px;
-} 
-.payment-method-two{
-	background: rgba(0, 0, 0, 0) url("img/cheque.png") no-repeat scroll 12px 15px;
-} 
-.payment-method-three{
-	background: rgba(0, 0, 0, 0) url("img/paypal-icon.png") no-repeat scroll 12px 15px;
-} 
-.payment-method-four{
-	background: rgba(0, 0, 0, 0) url("img/Master-Card-icon.png") no-repeat scroll 12px 15px;
-} 
+
 /*----------------------------------------
 25. single product page
 ------------------------------------------*/
@@ -4379,20 +3923,7 @@ span.large-btn:hover i{
 p.small-title{
 	font-size:12px;
 }
-.single-product-size select{
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	background: rgba(0, 0, 0, 0) url("img/sprite.png") no-repeat scroll -266px 0;
-	border:none;
-	border-left:1px solid #ccc;
-	color: #777;
-	font-size: 12px;
-	height: 27px;
-	width: 228px;
-	margin:5px 0 5px;	
-	padding-left:5px;
-}
-.single-product-size select option{}
+
 .single-product-color{
 	margin-bottom: 15px;
 	overflow:hidden;
@@ -4806,7 +4337,7 @@ a {
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
-  }
+}
   
   /* Set a style for all buttons */
   .btn_login {
