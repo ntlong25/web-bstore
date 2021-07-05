@@ -493,26 +493,33 @@ span.mobile-menu-title{
 	background:#EBEBEB;
 }
 .logo{
-	padding-top:25px;
 	float:left;
-	margin-bottom:25px;
 }
 .logo a{
 	display:block;
 }
-.categorys-product-search{
+.test{
+	/* float: left; */
+}
+h1.title-logo {
+    margin-top: 35px;
+    font-size: 70px;
+    padding-left: 30px;
 	float: right;
+}
+.categorys-product-search{
+	float: left;
 	height: 43px;
 	margin-top: 50px;
 	overflow: hidden;
 	padding-right: 15px;
 	padding-top: 0px;
-	width: 550px;
+	width: 415px;
 	margin-bottom: 25px;
 }
 .search-form{
 	border:none;
-	border-left:1px solid #d7d7d7;	
+	border-left:1px solid #d7d7d7;
 	box-shadow: none;
 	border-radius:0px;
 	color: #333;
@@ -520,7 +527,7 @@ span.mobile-menu-title{
 	min-height: 41px;
 	outline: medium none;
 	padding: 6px 10px;
-	width: 365px;
+	width: 260px;
 	background:#fff;
 }
 .search-form:focus, .search-form:active{
@@ -541,7 +548,7 @@ span.mobile-menu-title{
 	border-radius: 30px;
 }
 .cat-search{
-	background:#fff url("~/Assets/img/caret.png") no-repeat scroll 92% 45%;
+	background:#fff url("img/caret.png") no-repeat scroll 92% 45%;
 	border: medium none;
 	color: #464646;
 	cursor: pointer;
@@ -552,7 +559,7 @@ span.mobile-menu-title{
 	outline: medium none;
 	padding: 0px 0px 0px 10px;
 	text-transform: uppercase;
-	width: 134px;
+	width: 100px;
 }
 select::-ms-expand {
     display: none;
@@ -642,13 +649,19 @@ input.search-form[placeholder]:-ms-input-placeholder {
 	font-size:14px;
 	line-height:20px;
 }
+
+.header-logo{
+	padding: 0px 0px;
+}
 /*-----------------------
 3.3 mainmenu
 -------------------------*/	
 .main-menu-area{
 	background:#3A3D42;
 	height:55px;
-	position:relative;
+	position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .mainmenu{
@@ -942,7 +955,9 @@ span.pro-quality a:hover{
 /*-----------------------
 4. slider area css
 -------------------------*/	
-.main-content-section{}
+.main-content-section{
+	background: #eee;
+}
 .slider-progress{
 	position:absolute;
 	top:0;
@@ -1071,7 +1086,11 @@ div.nivo-controlNav a.active{
 	display:block;
 }
 .product-image img{
-	width:100%;
+	background-color: #fff;
+	border-radius: 15px;
+	width: 260px;
+    height: 250px;
+    object-fit: contain;
 }
 .product-image a{
 	display:block;
@@ -1421,7 +1440,7 @@ div.client-carousel .owl-item img {
 -------------------------*/	
 .company-facality{
 	background:#EBEBEB;
-	margin-top:30px;
+	padding-top:30px;
 	padding-bottom:50px;
 }
 .company-facality-row{}
@@ -4359,9 +4378,14 @@ a {
 	padding: 16px 75px 16px 75px;
   }
   
+  span.create-account {
+    float: left;
+    padding-right: 20px;
+}
   span.psw {
 	float: right;
   }
+  
   .login_content{
 	  padding-bottom: 30px;
   }

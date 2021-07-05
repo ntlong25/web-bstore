@@ -1885,10 +1885,10 @@ body {
     #PARAGRAPH228 > .ladi-paragraph {
         font-family: "SanFranciscoDisplay-Bold.otf";
         color: rgb(0, 0, 0);
-        font-size: 38px;
+        font-size: 50px;
         font-weight: bold;
         text-align: center;
-        line-height: 1.6;
+        line-height: 0.6;
     }
     #PARAGRAPH229 {
         width: 469px;
@@ -1898,10 +1898,10 @@ body {
     #PARAGRAPH229 > .ladi-paragraph {
         font-family: "SanFranciscoDisplay-Bold.otf";
         color: rgb(0, 0, 0);
-        font-size: 46px;
+        font-size: 41px;
         font-weight: bold;
         text-align: center;
-        line-height: 1.6;
+        line-height: 2.6;
     }
     #PARAGRAPH230 {
         width: 689px;
@@ -1917,7 +1917,7 @@ body {
     #IMAGE231 {
         width: 947.083px;
         height: 380.312px;
-        top: 241.55px;
+        top: 257.55px;
         left: 180.167px;
     }
     #IMAGE231 > .ladi-image > .ladi-image-background {
