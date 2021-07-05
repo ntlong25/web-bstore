@@ -197,7 +197,7 @@ h2.left-title a:hover{
 /*-----------------------
 2.3 center title
 -------------------------*/	
-.center-title-area{
+.center-title-area, .center-title-tab{
 	padding-left:15px;
 	padding-right:15px;
 }
@@ -1057,7 +1057,7 @@ div.nivo-controlNav a.active{
 5. product css
 -------------------------*/	
 .tow-column-product{}
-.new-product-area, .featured-products-area, .Sale-Products, .bestseller-products-area{
+.new-product-area, .featured-products-area, .Sale-Products, .bestseller-products-area, .center-title-highlight{
 	margin-top:50px;
 }
 .feartured-carousel .owl-wrapper .owl-item, .bestseller-carousel .owl-wrapper .owl-item, .latest-news-carousel .owl-wrapper .owl-item, .client-carousel .owl-wrapper .owl-item, .new-pro-carousel .owl-wrapper .owl-item, .sale-carousel .owl-wrapper .owl-item, .related-product .owl-wrapper .owl-item{
@@ -1200,9 +1200,7 @@ div.nivo-controlNav a.active{
 /*-----------------------
 5.1 tab product
 -------------------------*/
-.center-title-highlight{
-	padding: 50px 15px 0px;
-}
+
 .tab-bg-product-area {
 	padding: 45px 10px 15px;
 }
