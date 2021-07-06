@@ -3071,8 +3071,8 @@ form.error-ser-form .error-ser-btn:hover{
 .primari-box{
 	background: #fbfbfb none repeat scroll 0 0;
 	border: 1px solid #d6d4d4;
-	line-height: 23px;
-	margin:50px 150px 50px 150px;
+	line-height: 25px;
+	margin:50px 300px 50px 300px;
 	padding: 14px 18px 13px;
 	text-align: center;
 } 
@@ -3087,6 +3087,7 @@ form.error-ser-form .error-ser-btn:hover{
 	margin-top: 18px;
 	padding: 0 0 15px;
 	text-transform: uppercase;
+	text-align: center;
 } 
 .primary-box-content{} 
 .primary-box-content p{
@@ -3213,10 +3214,11 @@ form.error-ser-form .error-ser-btn:hover{
 	display: block;
 	float: left;
 	font-size: 13px;
-	margin-right: 35px;
+	margin-right: 7%;
+	margin-left: -1%;
 }  
 .personal-infomation .primary-form-group input{
-	max-width:270px
+	max-width:350px
 }
 .birth-day, .birth-month, .birth-year{
 	background: rgba(0, 0, 0, 0) url("~/Assets/img/sprite.png") no-repeat scroll -412px 0px;

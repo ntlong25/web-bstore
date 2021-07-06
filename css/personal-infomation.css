@@ -1,8 +1,10 @@
 .personal-info-content .p-info-group{
     text-align: left;
+    margin-left: 12%;
 }
 .personal-info-content .p-info-group label{
     text-align: left;
+    margin-left: 2%;
 }
 
 .personal-info-content .p-info-group input text{
