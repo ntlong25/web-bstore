@@ -369,20 +369,41 @@ update_num_product_shoplist();
 	});
 
 
-
+	
 /*---------------------------------------
 	đăng nhập
 ----------------------------------------- */
 	var modal = document.getElementById('login_form');
+	var modal1 = document.getElementById('signup_form');
+	var modal2 = document.getElementById('recover_password-form');
 
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
-		if (event.target == modal) {
+		if (event.target == modal||event.target == modal1||event.target == modal2) {
 			modal.style.display = "none";
+			modal1.style.display = "none";
+			modal2.style.display = "none";
 		}
+		
 	}
+	
 		
 }); 
-
+	
 })(jQuery);	
 
+
+
+function quenmk(){
+    var modal3 = document.getElementById('recover_password-form');
+	var modal4 = document.getElementById('login_form');
+    modal3.style.display="block";
+	modal4.style.display="none";
+}
+
+function dangky(){
+    var modal5 = document.getElementById('login_form');
+	var modal6 = document.getElementById('signup_form');
+    modal5.style.display="none";
+	modal6.style.display="block";
+}
