@@ -385,3 +385,4 @@ update_num_product_shoplist();
 }); 
 
 })(jQuery);	
+
