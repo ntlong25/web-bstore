@@ -332,7 +332,7 @@ span.mobile-menu-title{
 .meanmenu-reveal{
 	float:right;
 }
-.mean-container a.meanmenu-reveal span{}
+
 .mean-container .mean-nav ul li{
 	background: #fff none repeat scroll 0 0;
 	border-bottom: 1px solid #eaeaea;
@@ -377,6 +377,18 @@ span.mobile-menu-title{
 	display: flex;
 	margin-top: 40px;
 }
+.headerslider{
+	display: flex;
+}
+.static-banner{
+	display: block;
+}
+	.static-banner li{
+		margin: 10px;
+	}
+	.static-banner img{
+		border-radius: 15px;
+	}
 .headermid-logo {
 	display: flex;
 }
