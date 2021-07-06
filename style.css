@@ -95,6 +95,7 @@ img {
 	border:none;
 	max-width:100%;
 }	
+
 /*-----------------------
 2. global css
 -------------------------*/	
@@ -368,6 +369,68 @@ span.mobile-menu-title{
 /*-----------------------
 3. header css
 -------------------------*/	
+
+.test span{
+	color: rgb(43, 41, 41);
+}
+.test{
+	display: flex;
+	margin-top: 40px;
+}
+.headermid-logo {
+	display: flex;
+}
+.headermid-logo h1 {
+	color: red;
+	font-weight: bold;
+	font-size: xxx-large;
+}
+.headermid-logo h1,span{
+	padding: 5px;
+}
+.headerbanner{
+	margin-top: 20px;
+}
+.midbanner{
+	background-color: white;
+	display: flex;
+    align-items: center;
+	margin-top: 20px;
+    
+}
+.col img{
+    padding: 50px;
+    
+}
+.col p{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.col h1{
+	display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.col small{
+	font-size: smaller;
+	margin-bottom: 20px;
+}
+.button {
+	display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
 /*-----------------------
 3.1 header top
 -------------------------*/	
@@ -986,7 +1049,7 @@ span.pro-quality a:hover{
 	margin-top:15px;
 }
 .slider-area{}
-.sidebar-left{}
+
 .slider-wrapper{
 	position:relative;
 }
@@ -1073,7 +1136,7 @@ div.nivo-controlNav a.active{
 -------------------------*/	
 .tow-column-product{}
 .new-product-area, .featured-products-area, .Sale-Products, .bestseller-products-area, .center-title-highlight{
-	margin-top:50px;
+	margin-top:20px;
 }
 .feartured-carousel .owl-wrapper .owl-item, .bestseller-carousel .owl-wrapper .owl-item, .latest-news-carousel .owl-wrapper .owl-item, .client-carousel .owl-wrapper .owl-item, .new-pro-carousel .owl-wrapper .owl-item, .sale-carousel .owl-wrapper .owl-item, .related-product .owl-wrapper .owl-item{
 	padding:0 15px;
