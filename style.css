@@ -1305,7 +1305,7 @@ div.nivo-controlNav a.active{
 }
 .bg-tab-content-area{}
 .bg-tab-content-area .product-info a{
-	color:#fff;
+	color:rgb(0, 0, 0);
 }
 .bg-tab-content-area .product-info a:hover{
 	color:#FF4F4F;
