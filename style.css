@@ -434,6 +434,59 @@ span.mobile-menu-title{
 	font-size: smaller;
 	margin-bottom: 20px;
 }
+.homepage-cat .box {
+    display: flex;
+    -webkit-display: flex;
+    flex-flow: row nowrap;
+    flex: 1 100%;
+    justify-content: center;
+}
+.homepage-cat a span {
+    display: block;
+    text-align: center;
+}
+.homepage-cat a.cat-iphone i {
+    background-image: url(img/homepagecat/iphone12.svg);
+}
+.homepage-cat a.cat-mac i {
+    background-image: url(img/homepagecat/macbook.svg);
+}
+.homepage-cat a.cat-pkapple i {
+    background-image: url(img/homepagecat/apple.svg);
+}
+.homepage-cat a.cat-aw i {
+    background-image: url(img/homepagecat/aw.svg);
+}
+.homepage-cat a.cat-ipad i {
+    background-image: url(img/homepagecat/icon_ipad.png);
+}
+.homepage-cat a.cat-airpod i {
+    background-image: url(img/homepagecat/airpod.jpg);
+	border-radius: 12px;
+    border: solid 1px #d6d1d1;
+}
+.homepage-cat a.cat-airtag i {
+    background-image: url(img/homepagecat/airtag.jpg);
+	border-radius: 12px;
+    border: solid 1px #d6d1d1;
+}
+.homepage-cat a i {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 5px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+}
+.homepage-cat a {
+    width: 10%;
+    margin: 0;
+	color: #000;
+    display: inline-block;
+}
+ 
 .button {
 	display: inline-block;
     background: #ff523b;
