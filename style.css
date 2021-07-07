@@ -4468,7 +4468,7 @@ a {
   }
   
   /* The Modal (background) */
-  .modal {
+  .modal,.modal1,.modal2 {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 999999999; /* Sit on top */
@@ -4489,6 +4489,7 @@ a {
 	border: 1px solid #888;
 	width: 40%; /* Could be more or less, depending on screen size */
   }
+  
  
   
   /* Add Zoom Animation */
