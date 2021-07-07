@@ -4434,7 +4434,7 @@ a {
 }
   
   /* Set a style for all buttons */
-  .btn_login {
+  .btn_login, .btn_required, .btn_signin {
 	background-color: #5597fc;
 	border-radius: 30px;
 	color: white;
@@ -4445,7 +4445,7 @@ a {
 	width: 75%;
   }
   
-  .btn_login:hover {
+  .btn_login:hover, .btn_required:hover, .btn_signin:hover {
 	opacity: 0.8;
   }
   
