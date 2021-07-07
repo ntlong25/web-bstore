@@ -1358,7 +1358,7 @@ div.nivo-controlNav a.active{
 }
 .bg-tab-content-area{}
 .bg-tab-content-area .product-info a{
-	color:#fff;
+	color:rgb(0, 0, 0);
 }
 .bg-tab-content-area .product-info a:hover{
 	color:#FF4F4F;
@@ -4487,7 +4487,7 @@ a {
 }
   
   /* Set a style for all buttons */
-  .btn_login {
+  .btn_login, .btn_required, .btn_signin {
 	background-color: #5597fc;
 	border-radius: 30px;
 	color: white;
@@ -4498,7 +4498,7 @@ a {
 	width: 75%;
   }
   
-  .btn_login:hover {
+  .btn_login:hover, .btn_required:hover, .btn_signin:hover {
 	opacity: 0.8;
   }
   
@@ -4521,7 +4521,7 @@ a {
   }
   
   /* The Modal (background) */
-  .modal {
+  .modal,.modal1,.modal2 {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 999999999; /* Sit on top */
@@ -4542,6 +4542,7 @@ a {
 	border: 1px solid #888;
 	width: 40%; /* Could be more or less, depending on screen size */
   }
+  
  
   
   /* Add Zoom Animation */

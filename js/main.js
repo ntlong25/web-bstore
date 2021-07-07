@@ -407,3 +407,17 @@ function dangky(){
     modal5.style.display="none";
 	modal6.style.display="block";
 }
+
+function send_code(){
+    var modal7 = document.getElementById('send_mail');
+	var modal8 = document.getElementById('code');
+    modal7.style.display="none";
+	modal8.style.display="block";
+}
+
+function pass_new(){
+    var modal9 = document.getElementById('code');
+	var modal10 = document.getElementById('new_pass');
+    modal9.style.display="none";
+	modal10.style.display="block";
+}
