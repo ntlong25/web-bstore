@@ -3254,7 +3254,7 @@ form.error-ser-form .error-ser-btn:hover{
 	overflow:hidden;
 } 
 .personal-info-content .p-info-group{
-	margin-bottom:0;
+	margin-bottom:1%;
 } 
 .p-info-group label{
 	display: block;
@@ -3268,7 +3268,7 @@ form.error-ser-form .error-ser-btn:hover{
 	display: block;
 	float: left;
 	font-size: 13px;
-	margin-right: 7%;
+	margin-right: 1%;
 	margin-left: -1%;
 }  
 .personal-infomation .primary-form-group input{
