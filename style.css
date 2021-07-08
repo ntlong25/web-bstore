@@ -3302,6 +3302,27 @@ form.error-ser-form .error-ser-btn:hover{
 .birth-day:hover, .birth-month:hover, .birth-year:hover{
 	background-position:-412px -27px;
 }
+.province, .district, .ward label{
+	margin-right: 20%;
+}
+.province select, .district select, .ward select{
+	border: 1px solid #d6d4d4;
+	color: #9c9b9b;
+    height: 33px;
+	padding-left: 6px;
+	width: 350px;
+	max-width: 350px;
+}
+
+.address textarea{
+	border: 1px solid #d6d4d4;
+	color: #9c9b9b;
+    height: 33px;
+	padding-left: 6px;
+	width: 350px;
+	height: 100px;
+}
+
 span.radio-box{}
 .radio-box .radio-bg{}
 .input-radio{}
