@@ -94,7 +94,7 @@ update_num_product_shoplist();
 	var voucher = parseFloat($("#voucher").text().replace("$", ""));
 	$(".cart-total-price #total_product").text("$" + (Math.round(total_price * 100) / 100).toFixed(2));
 	var total = total_price + price_shipping - voucher;
-	$("#total-price").text("$" + (Math.round(total * 100) / 100).toFixed(2));
+	$("#total-price").text("$" + (Math.round(total_price * 100) / 100).toFixed(2));
 
 
 
