@@ -440,6 +440,7 @@ span.mobile-menu-title{
     flex-flow: row nowrap;
     flex: 1 100%;
     justify-content: center;
+	padding-top:3%;
 }
 .homepage-cat a span {
     display: block;
@@ -1349,7 +1350,7 @@ div.nivo-controlNav a.active{
 -------------------------*/
 
 .tab-bg-product-area {
-	padding: 45px 10px 15px;
+	padding: 0px 10px 15px;
 }
 .tab-content{}
 .bg-tab-content{}
