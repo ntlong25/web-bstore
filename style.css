@@ -440,6 +440,7 @@ span.mobile-menu-title{
     flex-flow: row nowrap;
     flex: 1 100%;
     justify-content: center;
+	padding-top:3%;
 }
 .homepage-cat a span {
     display: block;
@@ -980,7 +981,7 @@ input.search-form[placeholder]:-ms-input-placeholder {
 	z-index:999999999;
 	height:0px;
 	transition: all 0.4s ease 0s;
-	overflow:hidden;
+	overflow: scroll;
 	opacity:0;
 	visibility: hidden;
 }
@@ -1005,7 +1006,7 @@ span.remove:hover{
 	overflow: hidden;
 	font-size:12px;
 	line-height:25px;
-	padding:15px;
+	padding: 10px;
 	border-bottom:1px solid #d7d7d7;
 	position:relative;
 }
@@ -1064,6 +1065,8 @@ span.pro-quality a:hover{
 .shipping-checkout-btn{
 	padding:20px;
 	background:#F6F6F6;
+	position: sticky;
+    bottom: 0;
 }
 .shipping-checkout-btn a{
 	display:block;
@@ -1349,7 +1352,7 @@ div.nivo-controlNav a.active{
 -------------------------*/
 
 .tab-bg-product-area {
-	padding: 45px 10px 15px;
+	padding: 0px 10px 15px;
 }
 .tab-content{}
 .bg-tab-content{}
@@ -3253,7 +3256,7 @@ form.error-ser-form .error-ser-btn:hover{
 	overflow:hidden;
 } 
 .personal-info-content .p-info-group{
-	margin-bottom:0;
+	margin-bottom:1%;
 } 
 .p-info-group label{
 	display: block;
@@ -3267,7 +3270,7 @@ form.error-ser-form .error-ser-btn:hover{
 	display: block;
 	float: left;
 	font-size: 13px;
-	margin-right: 7%;
+	margin-right: 1%;
 	margin-left: -1%;
 }  
 .personal-infomation .primary-form-group input{
@@ -3299,6 +3302,27 @@ form.error-ser-form .error-ser-btn:hover{
 .birth-day:hover, .birth-month:hover, .birth-year:hover{
 	background-position:-412px -27px;
 }
+.province, .district, .ward label{
+	margin-right: 20%;
+}
+.province select, .district select, .ward select{
+	border: 1px solid #d6d4d4;
+	color: #9c9b9b;
+    height: 33px;
+	padding-left: 6px;
+	width: 350px;
+	max-width: 350px;
+}
+
+.address textarea{
+	border: 1px solid #d6d4d4;
+	color: #9c9b9b;
+    height: 33px;
+	padding-left: 6px;
+	width: 350px;
+	height: 100px;
+}
+
 span.radio-box{}
 .radio-box .radio-bg{}
 .input-radio{}
