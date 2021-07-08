@@ -980,7 +980,7 @@ input.search-form[placeholder]:-ms-input-placeholder {
 	z-index:999999999;
 	height:0px;
 	transition: all 0.4s ease 0s;
-	overflow:hidden;
+	overflow: scroll;
 	opacity:0;
 	visibility: hidden;
 }
@@ -1005,7 +1005,7 @@ span.remove:hover{
 	overflow: hidden;
 	font-size:12px;
 	line-height:25px;
-	padding:15px;
+	padding: 10px;
 	border-bottom:1px solid #d7d7d7;
 	position:relative;
 }
@@ -1064,6 +1064,8 @@ span.pro-quality a:hover{
 .shipping-checkout-btn{
 	padding:20px;
 	background:#F6F6F6;
+	position: sticky;
+    bottom: 0;
 }
 .shipping-checkout-btn a{
 	display:block;
